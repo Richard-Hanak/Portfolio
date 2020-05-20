@@ -1,0 +1,21 @@
+.searchResults {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(700px, 700px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(700px, 700px));
+  grid-gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e4d7d7;
+}
+
+.searchResults h3 {
+  text-align: center;
+  font-size: 36px;
+  padding-bottom: 100vh;
+  font-family: Lora;
+}
+/*# sourceMappingURL=SearchResults.css.map */

@@ -1,0 +1,98 @@
+.recipeCard {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr;
+  grid-template-rows: 40px 186px 34px;
+  grid-template-areas:
+    "img title title"
+    "img ingred ingred"
+    "img serves link";
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 40px;
+  background-color: #f8f4f4;
+  box-shadow: 1px 1px 16px rgba(36, 36, 36, 0.26);
+
+  img {
+    grid-area: img;
+    height: 260px;
+    width: 260px;
+    border-radius: 40px;
+  }
+
+  .link {
+    grid-area: link;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    font-family: Lora;
+  }
+
+  .title {
+    position: relative;
+    top: 4px;
+    grid-area: title;
+    line-height: 40px;
+    padding-left: 20px;
+    padding-top: 5px;
+    overflow: hidden;
+    font-family: Lora;
+  }
+
+  .ingred {
+    position: relative;
+    top: 4px;
+    grid-area: ingred;
+    overflow: hidden;
+    height: 162px;
+    padding-left: 20px;
+    padding-right: 10px;
+    align-self: center;
+    list-style: none;
+    font-size: 16px;
+    font-family: Lora;
+  }
+
+  .serves {
+    grid-area: serves;
+    text-align: center;
+    font-size: 18px;
+    font-family: Lora;
+  }
+}
+
+@media (max-width: 710px) {
+  .recipeCard {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 280px 40px 1fr 40px;
+    grid-template-areas:
+      "img  img"
+      "title title"
+      "ingred ingred"
+      "serves link";
+    width: 280px;
+    height: 580px;
+
+    img {
+      width: 280px;
+      height: 280px;
+    }
+
+    .title {
+      top: 0;
+      padding-left: 0;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    .ingred {
+      top: 0px;
+      height: 184px;
+      font-size: 16px;
+    }
+
+    .link {
+      right: 10px;
+    }
+  }
+}

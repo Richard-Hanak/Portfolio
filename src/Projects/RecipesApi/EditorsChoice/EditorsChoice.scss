@@ -1,0 +1,98 @@
+.editorsChoice {
+  grid-area: edchoice;
+  margin-left: 180px;
+  margin-top: 200px;
+
+  div {
+    position: relative;
+    height: 600px;
+    width: 300px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+
+    a {
+      color: inherit;
+    }
+
+    p {
+      font-family: Lora-Italic;
+      position: absolute;
+      text-align: center;
+      background-color: #e4d7d7;
+      z-index: 3;
+      font-size: 34px;
+      top: 46%;
+      left: 8%;
+      width: 83.5%;
+      height: 9%;
+      padding: 4px 3px 0px 3px;
+      opacity: 1;
+      transition: opacity 100ms;
+      transition-delay: 250ms;
+    }
+
+    figure {
+      position: relative;
+      pointer-events: none;
+
+
+      figcaption {
+        font-family: Lora-Italic;
+        position: absolute;
+        background-color: #e4d7d7;
+        font-size: 30px;
+        z-index: 2;
+        text-align: center;
+        transition: transform ease-out 350ms;
+      }
+
+      .figTop {
+        top: 92.5%;
+        left: 8%;
+        width: 83.5%;
+        padding: 0px 3px 0px 3px;
+      }
+
+      .figBottom {
+        top: -5.5%;
+        left: 8%;
+        width: 83.5%;
+        padding: 0px 3px 0px 3px;
+      }
+
+      &.two {
+        bottom: 4px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 1.5em;
+        left: 1.5em;
+        width: 83.5%;
+        height: 83.5%;
+        z-index: 1;
+        border: 3px solid #e4d7d7;
+        transition: transform ease-out 350ms;
+      }
+    }
+
+    &:hover {
+      figure.one::after {
+        transform: translateY(118%);
+      }
+      figure.two::after {
+        transform: translateY(-118%);
+      }
+      .figTop {
+        transform: translateY(-675%);
+      }
+      .figBottom {
+        transform: translateY(675%);
+      }
+      p {
+        opacity: 0;
+        transition: opacity 350ms;
+      }
+    }
+  }
+}

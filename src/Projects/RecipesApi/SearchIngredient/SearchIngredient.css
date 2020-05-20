@@ -1,0 +1,106 @@
+.ingredients {
+  grid-area: ingredient;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  left: 45%;
+  padding-top: 200px;
+  -ms-grid-columns: (minmax(220px, 220px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
+  grid-gap: 10px;
+}
+
+.ingredients h2 {
+  font-family: Lora-Italic;
+  position: relative;
+  font-size: 42px;
+  top: 20px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.ingredients .shadow {
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  background-color: black;
+}
+
+.ingredients .shadow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.164);
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.164);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ingredients .shadow .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+}
+
+.ingredients .shadow p {
+  line-height: 220px;
+  font-size: 30px;
+  color: white;
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  pointer-events: none;
+}
+
+.ingredients .shadow input {
+  position: absolute;
+  height: 100%;
+  -webkit-transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ingredients .shadow:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  z-index: 100;
+}
+
+.ingredients .shadow:hover p {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.ingredients .shadow:hover::after {
+  opacity: 1;
+}
+
+.ingredients .shadow:hover input {
+  opacity: 0.65;
+}
+/*# sourceMappingURL=SearchIngredient.css.map */

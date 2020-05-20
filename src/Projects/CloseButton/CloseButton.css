@@ -1,0 +1,27 @@
+.closeBtnWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  top: 4px;
+  right: 4px;
+  background-color: rgba(31, 31, 31, 0.733);
+}
+
+.closeBtnWrap:hover {
+  background-color: rgba(56, 56, 56, 0.808);
+}
+
+.closeBtnWrap .closeButton {
+  fill: white;
+}
+/*# sourceMappingURL=CloseButton.css.map */

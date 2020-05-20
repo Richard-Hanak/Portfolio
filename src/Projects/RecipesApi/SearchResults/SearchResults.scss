@@ -1,0 +1,19 @@
+$base-color: #e4d7d7;
+
+.searchResults {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 700px));
+  grid-gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $base-color;
+
+  h3 {
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 100vh;
+    font-family: Lora;
+  }
+} 
+

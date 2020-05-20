@@ -1,0 +1,75 @@
+.banner {
+  grid-area: banner;
+  background-image: url("https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  font-family: Lora;
+}
+
+.banner svg {
+  cursor: pointer;
+  fill: #e4d7d7;
+}
+
+.banner .home {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+
+.banner button {
+  position: relative;
+  right: 4px;
+  top: 1px;
+  border: none;
+  background: none;
+}
+
+.banner .searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #e4d7d7;
+  border-radius: 20px;
+}
+
+.banner .searchBar input {
+  outline: none;
+  border: 0;
+  background: none;
+  font-size: 18px;
+  color: #e4d7d7;
+  font-family: Lora;
+}
+
+.banner form p {
+  text-align: center;
+  color: #e4d7d7;
+}
+
+.banner .checkbox {
+  position: relative;
+  top: 1px;
+  right: 4px;
+  padding: 100px;
+}
+/*# sourceMappingURL=Banner.css.map */
