@@ -2,3 +2,30 @@
 @import "./Projects/Projects.scss";
 @import "./Projects/LabelCreator/LabelCreator.scss";
 @import "./Banner/Banner.scss";
+
+@font-face {
+  font-family: "Barlow-l";
+  src: local("Barlow-ExtraLight"),
+    url(./fonts/Barlow-ExtraLight.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Barlow-r";
+  src: local("Barlow-Regular"),
+    url(./fonts/Barlow-Regular.ttf) format("truetype");
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-image: url("./images/BlackHero.jpg");
+  overflow: hidden;
+  height: 300vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Barlow-l";
+}

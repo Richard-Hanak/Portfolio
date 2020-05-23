@@ -22,7 +22,7 @@ $base-color: #e4d7d7;
   box-sizing: border-box;
 }
 
-.app {
+.Home {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "edchoice ingredient";
@@ -32,7 +32,7 @@ $base-color: #e4d7d7;
 }
 
 @media (max-width: 1376px) {
-  .app {
+  .Home {
     height: 1350px;
   }
 }
@@ -45,7 +45,7 @@ $base-color: #e4d7d7;
 }
 
 @media (max-width: 920px) {
-  .app {
+  .Home {
     height: 1900px;
     grid-template-rows: 50vh auto 1fr;
     grid-template-areas:
@@ -93,7 +93,7 @@ $base-color: #e4d7d7;
 }
 
 @media (max-width: 510px) {
-  .app {
+  .Home {
     height: 1400px;
   }
   .editorsChoice {

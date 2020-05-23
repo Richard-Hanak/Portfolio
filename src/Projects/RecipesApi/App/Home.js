@@ -6,16 +6,16 @@ import SearchIngredient from "../SearchIngredient/SearchIngredient";
 import CloseButton from "../../CloseButton/CloseButton";
 
 
-const App = () => {
+const Home = () => {
   return (
     <>
       <CloseButton/>
       <Banner />
-      <div className="app">
+      <div className="Home">
         <EditorsChoice />
         <SearchIngredient />
       </div>
     </>
   );
 };
-export default App;
+export default Home;
