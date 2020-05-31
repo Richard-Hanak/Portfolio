@@ -3,19 +3,16 @@ import React from "react";
 import Banner from "../Banner/Banner";
 import EditorsChoice from "../EditorsChoice/EditorsChoice";
 import SearchIngredient from "../SearchIngredient/SearchIngredient";
-import CloseButton from "../../CloseButton/CloseButton";
 
-
-const Home = () => {
-  return (
-    <>
-      <CloseButton/>
-      <Banner />
-      <div className="Home">
+const Home = ({setShowRecipeResults}) => {
+  return ( 
+    <div id="recipesWrap">
+      <Banner setShowRecipeResults={setShowRecipeResults}/>
+      <div className="Home" id="test">
         <EditorsChoice />
-        <SearchIngredient />
+        <SearchIngredient setShowRecipeResults={setShowRecipeResults}/>
       </div>
-    </>
+    </div>
   );
 };
-export default Home;
+export default React.memo(Home);

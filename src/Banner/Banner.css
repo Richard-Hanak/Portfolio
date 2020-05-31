@@ -58,34 +58,4 @@
   border: solid 2px white;
   border-bottom: none;
 }
-
-.gradient #btn.prjects {
-  left: 48px;
-}
-
-.gradient #btn.contact {
-  left: 490px;
-  width: 280px;
-  padding-left: 0;
-  padding-right: 30px;
-}
-
-.gradient svg {
-  position: relative;
-  left: 10px;
-  margin-right: 10px;
-  fill: white;
-}
-
-.gradient .top {
-  position: absolute;
-  top: 28px;
-  left: 220px;
-}
-
-.gradient .bot {
-  position: absolute;
-  top: 42px;
-  left: 220px;
-}
 /*# sourceMappingURL=Banner.css.map */

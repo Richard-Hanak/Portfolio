@@ -2,7 +2,6 @@ import React, { useContext, useEffect } from "react";
 
 import Banner from "../Banner/Banner";
 import RecipeCard from "../RecipeCard/RecipeCard";
-import CloseButton from "../../CloseButton/CloseButton";
 import {
   RecipesContext,
   LoadingContext,
@@ -10,7 +9,7 @@ import {
   SearchContext,
 } from "../Context";
 
-const SearchResults = () => {
+const SearchResults = ({setShowRecipeResults}) => {
   const [loading, setLoading] = useContext(LoadingContext);
   const [recipes] = useContext(RecipesContext);
   const setSearch = useContext(SearchContext)[1];
@@ -30,8 +29,7 @@ const SearchResults = () => {
 
   return (
     <>
-    <CloseButton/>
-      <Banner />
+      <Banner setShowRecipeResults={setShowRecipeResults}/>
       <div className="searchResults">
         {loading ? (
           <h3>Loading...</h3>
@@ -51,4 +49,4 @@ const SearchResults = () => {
     </>
   );
 };
-export default SearchResults;
+export default React.memo(SearchResults);

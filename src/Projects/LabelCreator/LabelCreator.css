@@ -1,15 +1,15 @@
-.IframeWrapper {
+#labelCreatorWrap {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #444444;
+}
+
+#labelCreatorWrap .IframeWrapper {
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-.BackgroundWrap {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: #444444;
 }
 /*# sourceMappingURL=LabelCreator.css.map */

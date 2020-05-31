@@ -1,4 +1,4 @@
-@import "./Projects/CloseButton/CloseButton.scss";
+@import "./CloseButton/CloseButton.scss";
 @import "./Projects/Projects.scss";
 @import "./Projects/LabelCreator/LabelCreator.scss";
 @import "./Banner/Banner.scss";
@@ -14,18 +14,114 @@
     url(./fonts/Barlow-Regular.ttf) format("truetype");
 }
 
-* { 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.app {
-  background-image: url("./images/BlackHero.jpg");
+#scroll-wrap {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   height: 300vh;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: "Barlow-l";
+
+  .background {
+    background-image: url("./images/BlackHero.jpg");
+    overflow: hidden;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Barlow-l";
+  }
+
+  #btn {
+    position: absolute;
+    top: 100%;
+    transform: translate(0, -100%);
+    width: 240px;
+    text-align: center;
+    line-height: 74px;
+    font-size: 34px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    padding-right: 20px;
+    border: solid 2px white;
+    border-bottom: none;
+    z-index: 100;
+    cursor: pointer;
+  }
+  #slide-one {
+    position: absolute;
+    width: 100%;
+    #btn {
+      &.prjects {
+        left: 48px;
+        padding-left: 14px;
+      }
+      &.contact {
+        left: 490px;
+        width: 280px;
+        padding-left: 0;
+        padding-right: 30px;
+      }
+      svg {
+        position: relative;
+        top: -2px;
+        left: 10px;
+        margin-right: 10px;
+        fill: white;
+      }
+
+      .top {
+        position: absolute;
+        top: 28px;
+        left: 220px;
+      }
+
+      .bot {
+        position: absolute;
+        top: 42px;
+        left: 220px;
+      }
+    }
+  }
+
+  #slide-two {
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    #btn {
+      &.home {
+        width: 208px;
+        left: 48px;
+        padding-right: 30px;
+      }
+      &.contact {
+        left: 470px;
+        width: 280px;
+        padding-right: 60px;
+      }
+      svg {
+        position: relative;
+        top: -2px;
+        left: 218px;
+        margin-right: 10px;
+        fill: white;
+      }
+      .up {
+        position: absolute;
+        top: 35px;
+        left: 140px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  #slide-three {
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    width: 100%;
+  }
 }

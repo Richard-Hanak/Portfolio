@@ -122,33 +122,6 @@
     padding-right: 20px;
     border: solid 2px white;
     border-bottom: none;
-    &.prjects {
-      left: 48px;
-    }
-    &.contact {
-      left: 490px;
-      width: 280px;
-      padding-left: 0;
-      padding-right: 30px;
-    }
-  }
 
-  svg {
-    position: relative;
-    left: 10px;
-    margin-right: 10px;
-    fill: white;
-  }
-
-  .top {
-    position: absolute;
-    top: 28px;
-    left: 220px;
-  }
-  
-  .bot {
-    position: absolute;
-    top: 42px;
-    left: 220px;
   }
 }

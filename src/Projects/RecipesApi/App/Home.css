@@ -331,6 +331,7 @@
 }
 
 .banner {
+  position: relative;
   grid-area: banner;
   background-image: url("https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874_960_720.jpg");
   background-repeat: no-repeat;
@@ -451,7 +452,7 @@
       grid-template-columns: 1fr 2fr;
       grid-template-areas: "edchoice ingredient";
   background-color: #e4d7d7;
-  height: 1150px;
+  height: 1000px;
   font-family: Lora;
 }
 
@@ -480,7 +481,7 @@
     margin-top: 60px;
   }
   .wrapper .ingredients {
-    top: calc(50vh + 700px);
+    top: calc(250vh + 700px);
     left: 0%;
     width: 100%;
     padding: 20px;
@@ -519,7 +520,7 @@
     margin: 10px auto;
   }
   .wrapper .ingredients {
-    top: calc(50vh + 610px);
+    top: calc(250vh + 610px);
     padding: 10px;
     -ms-grid-columns: (minmax(130px, 140px))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(130px, 140px));

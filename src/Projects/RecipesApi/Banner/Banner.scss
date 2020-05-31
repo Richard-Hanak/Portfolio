@@ -1,6 +1,7 @@
 $base-color: #e4d7d7;
 
 .banner {
+  position: relative;
   grid-area: banner;
   background-image: url("https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874_960_720.jpg");
   background-repeat: no-repeat;

@@ -17,13 +17,17 @@
   z-index: 1000;
 }
 
-.gameWrapper {
+#gameWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #444444;
 }
 
-.gameScreen {
+#gameWrapper .gameScreen {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -40,7 +44,7 @@
           box-sizing: border-box;
 }
 
-.gameScreen .nav {
+#gameWrapper .gameScreen .nav {
   position: relative;
   left: 40px;
   top: 15%;
@@ -58,7 +62,7 @@
   width: 300px;
 }
 
-.gameScreen .nav .start {
+#gameWrapper .gameScreen .nav .start {
   font-family: "game-font-bold";
   text-align: center;
   font-weight: bold;
@@ -77,26 +81,26 @@
   text-decoration: none;
 }
 
-.gameScreen .nav .start:hover {
+#gameWrapper .gameScreen .nav .start:hover {
   color: #e7eef3;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #d8dddd), to(#9ca3a3));
   background: linear-gradient(to bottom, #d8dddd 5%, #9ca3a3 100%);
   background-color: #d8dddd;
 }
 
-.gameScreen .nav .start:active {
+#gameWrapper .gameScreen .nav .start:active {
   position: relative;
 }
 
-.gameScreen .nav .start:nth-child(2):hover + .tip {
+#gameWrapper .gameScreen .nav .start:nth-child(2):hover + .tip {
   display: block;
 }
 
-.gameScreen .nav .start:nth-child(4):hover + .highScore {
+#gameWrapper .gameScreen .nav .start:nth-child(4):hover + .highScore {
   display: block;
 }
 
-.gameScreen h3 {
+#gameWrapper .gameScreen h3 {
   position: absolute;
   top: 56px;
   left: 520px;
@@ -118,18 +122,18 @@
   text-decoration: none;
 }
 
-.gameScreen h3:hover {
+#gameWrapper .gameScreen h3:hover {
   color: #e7eef3;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #d8dddd), to(#9ca3a3));
   background: linear-gradient(to bottom, #d8dddd 5%, #9ca3a3 100%);
   background-color: #d8dddd;
 }
 
-.gameScreen h3:active {
+#gameWrapper .gameScreen h3:active {
   position: relative;
 }
 
-.gameScreen .tip {
+#gameWrapper .gameScreen .tip {
   display: none;
   position: absolute;
   font-size: 24px;
@@ -139,7 +143,7 @@
   font-family: "game-font";
 }
 
-.gameScreen .highScore {
+#gameWrapper .gameScreen .highScore {
   display: none;
   font-family: "game-font-bold";
   position: absolute;
@@ -153,28 +157,28 @@
   text-align: center;
 }
 
-.gameScreen .highScore li {
+#gameWrapper .gameScreen .highScore li {
   font-size: 32px;
   line-height: 46px;
   text-align: right;
 }
 
-.gameScreen .highScore li .Hscore-mid {
+#gameWrapper .gameScreen .highScore li .Hscore-mid {
   position: absolute;
   left: 60%;
 }
 
-.gameScreen .highScore li .Hscore-left {
+#gameWrapper .gameScreen .highScore li .Hscore-left {
   position: relative;
   right: 39%;
 }
 
-.gameScreen .highScore li .Hscore-right {
+#gameWrapper .gameScreen .highScore li .Hscore-right {
   position: absolute;
   left: 68%;
 }
 
-.gameScreen .countDown {
+#gameWrapper .gameScreen .countDown {
   display: block;
   top: 0;
   line-height: 500px;
@@ -188,7 +192,7 @@
   font-family: "game-font";
 }
 
-.gameScreen .target {
+#gameWrapper .gameScreen .target {
   position: absolute;
   z-index: 10;
   height: 40px;
@@ -198,11 +202,11 @@
   cursor: url("target.png") 15 15, auto;
 }
 
-.gameScreen .target:active {
+#gameWrapper .gameScreen .target:active {
   background-image: radial-gradient(orange, yellow);
 }
 
-.gameScreen .score {
+#gameWrapper .gameScreen .score {
   position: absolute;
   font-size: 24px;
   font-weight: bold;
@@ -210,7 +214,7 @@
   font-family: "game-font";
 }
 
-.gameScreen .lives {
+#gameWrapper .gameScreen .lives {
   position: absolute;
   font-size: 24px;
   font-weight: bold;
@@ -218,7 +222,7 @@
   font-family: "game-font";
 }
 
-.gameScreen .lose {
+#gameWrapper .gameScreen .lose {
   position: relative;
   line-height: 180px;
   top: 40px;
@@ -227,7 +231,7 @@
   font-weight: bold;
 }
 
-.gameScreen .menu {
+#gameWrapper .gameScreen .menu {
   position: relative;
   top: 30px;
   left: 50%;
@@ -248,18 +252,18 @@
   text-decoration: none;
 }
 
-.gameScreen .menu:hover {
+#gameWrapper .gameScreen .menu:hover {
   color: #e7eef3;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #d8dddd), to(#9ca3a3));
   background: linear-gradient(to bottom, #d8dddd 5%, #9ca3a3 100%);
   background-color: #d8dddd;
 }
 
-.gameScreen .menu:active {
+#gameWrapper .gameScreen .menu:active {
   position: relative;
 }
 
-.gameScreen form {
+#gameWrapper .gameScreen form {
   position: absolute;
   top: 0;
   width: 900px;
@@ -279,7 +283,7 @@
           justify-content: center;
 }
 
-.gameScreen form input {
+#gameWrapper .gameScreen form input {
   margin-top: 40px;
   position: relative;
   width: 300px;
@@ -287,7 +291,7 @@
   font-size: 32px;
 }
 
-.gameScreen form button {
+#gameWrapper .gameScreen form button {
   -webkit-box-shadow: inset #384b4b;
           box-shadow: inset #384b4b;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #9ca3a3), to(#d8dddd));
@@ -305,14 +309,14 @@
   font-size: 36px;
 }
 
-.gameScreen form button:hover {
+#gameWrapper .gameScreen form button:hover {
   color: #e7eef3;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #d8dddd), to(#9ca3a3));
   background: linear-gradient(to bottom, #d8dddd 5%, #9ca3a3 100%);
   background-color: #d8dddd;
 }
 
-.gameScreen form button:active {
+#gameWrapper .gameScreen form button:active {
   position: relative;
 }
 /*# sourceMappingURL=app.css.map */

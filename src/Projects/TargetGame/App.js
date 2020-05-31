@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import CloseButton from "../CloseButton/CloseButton.js";
 import "./App.css";
 
 function compare(a, b) {
@@ -129,8 +128,7 @@ function Tgame() {
   };
 
   return (
-    <div className="gameWrapper">
-      <CloseButton/>
+    <div id="gameWrapper">
       <div className="gameScreen">
         {menu ? (
           <>

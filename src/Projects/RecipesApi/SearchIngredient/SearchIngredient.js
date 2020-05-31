@@ -1,21 +1,19 @@
 import React, { useContext } from "react";
-import { Redirect } from "react-router-dom";
 
 import { SearchContext, LoadingContext } from "../Context";
 
-const SearchIngredient = () => {
+const SearchIngredient = ({ setShowRecipeResults }) => {
   const setSearch = useContext(SearchContext)[1];
   const [loading, setLoading] = useContext(LoadingContext);
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
+    setShowRecipeResults(true);
     e.preventDefault();
     setLoading(true);
-    window.scrollTo(0, 0);
   };
 
   return (
     <div className="wrapper">
-      {loading ? <Redirect to="/recipesapi/results" /> : null}
       <form className="ingredients" onSubmit={handleSubmit}>
         <h2>
           Search <br></br>by Ingredient
@@ -124,4 +122,4 @@ const SearchIngredient = () => {
   );
 };
 
-export default SearchIngredient;
+export default React.memo(SearchIngredient);

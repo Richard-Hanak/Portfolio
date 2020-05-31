@@ -15,4 +15,4 @@ const RecipeCard = ({name, image, ingredients, url, serves}) => {
   );
 }
 
-export default RecipeCard;
+export default React.memo(RecipeCard);

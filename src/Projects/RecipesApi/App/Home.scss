@@ -27,7 +27,7 @@ $base-color: #e4d7d7;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "edchoice ingredient";
   background-color: $base-color;
-  height: 1150px;
+  height: 1000px;
   font-family: Lora;
 }
 
@@ -58,7 +58,7 @@ $base-color: #e4d7d7;
   }
   .wrapper {
     .ingredients {
-      top: calc(50vh + 700px);
+      top: calc(250vh + 700px);
       left: 0%;
       width: 100%;
       padding: 20px;
@@ -100,7 +100,7 @@ $base-color: #e4d7d7;
     margin: 10px auto;
   }
   .wrapper .ingredients {
-    top: calc(50vh + 610px);
+    top: calc(250vh + 610px);
     padding: 10px;
     grid-template-columns: repeat(auto-fit, minmax(130px, 140px));
     .container {
