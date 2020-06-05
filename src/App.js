@@ -2,8 +2,9 @@ import React, { useRef, useState, useEffect } from "react";
 import { FullPage, Slide } from "react-full-page";
 import { disableBodyScroll } from "body-scroll-lock";
 
-import Banner from "./Banner/Banner.js"
+import Banner from "./Banner/Banner.js";
 import Projects from "./Projects/Projects.js";
+import Contact from "./Contact/Contact.js";
 
 import CloseButton from "./CloseButton/CloseButton.js";
 import Home from "./Projects/RecipesApi/App/Home.js";
@@ -16,6 +17,7 @@ import "./App.css";
 
 function App() {
   const [projectScroll, setProjectScroll] = useState(false);
+  const [scrollToPage, setScrollToPage] = useState();
   const [renderElement, setRenderElement] = useState("slide-three");
   const [showRecipeResults, setShowRecipeResults] = useState(false);
   const fullPageRef = useRef();
@@ -32,6 +34,11 @@ function App() {
     })();
   }, [projectScroll]);
 
+  useEffect(() => {
+    fullPageRef.current.scrollToSlide(scrollToPage);
+    setScrollToPage();
+  }, [scrollToPage]);
+
   return (
     <div id="scroll-wrap">
       <FullPage
@@ -40,70 +47,20 @@ function App() {
       >
         <Slide>
           <div className="background" id="slide-one">
-            <Banner />
-            <p
-              id="btn"
-              className="contact"
-              onClick={() => {
-                fullPageRef.current.scrollToSlide(2);
-              }}
-            >
-              <svg className="top" height="13" width="22">
-                <path d="m0.391254,0.569045l10.638666,11.973533l10.638666,-11.973533l-21.277331,0z" />
-              </svg>
-              <svg className="bot" height="13" width="22">
-                <path d="m0.391254,0.569045l10.638666,11.973533l10.638666,-11.973533l-21.277331,0z" />
-              </svg>
-              Contact me
-            </p>
-            <p
-              id="btn"
-              className="prjects"
-              onClick={() => {
-                fullPageRef.current.scrollToSlide(1);
-              }}
-            >
-              Projects
-              <svg height="13" width="22">
-                <path d="m0.391254,0.569045l10.638666,11.973533l10.638666,-11.973533l-21.277331,0z" />
-              </svg>
-            </p>
+            <Banner setScrollToPage={setScrollToPage} />
           </div>
         </Slide>
         <Slide>
           <div className="background" id="slide-two">
             <Projects
+              setScrollToPage={setScrollToPage}
               setRenderElement={setRenderElement}
               setProjectScroll={setProjectScroll}
             />
-            <p
-              id="btn"
-              className="contact"
-              onClick={() => {
-                fullPageRef.current.scrollToSlide(2);
-              }}
-            >
-              <svg height="13" width="22">
-                <path d="m0.391254,0.569045l10.638666,11.973533l10.638666,-11.973533l-21.277331,0z" />
-              </svg>
-              Contact me
-            </p>
-            <p
-              id="btn"
-              className="home"
-              onClick={() => {
-                fullPageRef.current.scrollToSlide(0);
-              }}
-            >
-              Home
-              <svg className="up" height="13" width="22">
-                <path d="m0.391254,0.569045l10.638666,11.973533l10.638666,-11.973533l-21.277331,0z" />
-              </svg>
-            </p>
           </div>
         </Slide>
         <Slide>
-          <div id="slide-three">
+          <div id="slide-three" className="background">
             {projectScroll ? (
               <CloseButton
                 setRenderElement={setRenderElement}
@@ -122,7 +79,9 @@ function App() {
               </Context>
             ) : renderElement === "LabelCreator" ? (
               <LabelCreator />
-            ) : null}
+            ) : (
+              <Contact setScrollToPage={setScrollToPage} />
+            )}
           </div>
         </Slide>
       </FullPage>

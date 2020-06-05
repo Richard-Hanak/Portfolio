@@ -1,4 +1,4 @@
-.prjgradient {
+.project-gradient {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,26 +10,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: linear-gradient(131deg, rgba(186, 186, 186, 0.01) 0%, rgba(186, 186, 186, 0.01) 16.667%, rgba(192, 192, 192, 0.01) 16.667%, rgba(192, 192, 192, 0.01) 33.334%, rgba(48, 48, 48, 0.01) 33.334%, rgba(48, 48, 48, 0.01) 50.001%, rgba(33, 33, 33, 0.01) 50.001%, rgba(33, 33, 33, 0.01) 66.668%, rgba(182, 182, 182, 0.01) 66.668%, rgba(182, 182, 182, 0.01) 83.335%, rgba(211, 211, 211, 0.01) 83.335%, rgba(211, 211, 211, 0.01) 100.002%), linear-gradient(148deg, rgba(48, 48, 48, 0.01) 0%, rgba(48, 48, 48, 0.01) 16.667%, rgba(178, 178, 178, 0.01) 16.667%, rgba(178, 178, 178, 0.01) 33.334%, rgba(192, 192, 192, 0.01) 33.334%, rgba(192, 192, 192, 0.01) 50.001%, rgba(237, 237, 237, 0.01) 50.001%, rgba(237, 237, 237, 0.01) 66.668%, rgba(194, 194, 194, 0.01) 66.668%, rgba(194, 194, 194, 0.01) 83.335%, rgba(227, 227, 227, 0.01) 83.335%, rgba(227, 227, 227, 0.01) 100.002%), linear-gradient(138deg, rgba(146, 146, 146, 0.03) 0%, rgba(146, 146, 146, 0.03) 25%, rgba(33, 33, 33, 0.03) 25%, rgba(33, 33, 33, 0.03) 50%, rgba(46, 46, 46, 0.03) 50%, rgba(46, 46, 46, 0.03) 75%, rgba(172, 172, 172, 0.03) 75%, rgba(172, 172, 172, 0.03) 100%), linear-gradient(38deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 16.667%, rgba(28, 28, 28, 0.03) 16.667%, rgba(28, 28, 28, 0.03) 33.334%, rgba(236, 236, 236, 0.03) 33.334%, rgba(236, 236, 236, 0.03) 50.001%, rgba(3, 3, 3, 0.03) 50.001%, rgba(3, 3, 3, 0.03) 66.668%, rgba(207, 207, 207, 0.03) 66.668%, rgba(207, 207, 207, 0.03) 83.335%, rgba(183, 183, 183, 0.03) 83.335%, rgba(183, 183, 183, 0.03) 100.002%), linear-gradient(145deg, rgba(20, 20, 20, 0.02) 0%, rgba(20, 20, 20, 0.02) 20%, rgba(4, 4, 4, 0.02) 20%, rgba(4, 4, 4, 0.02) 40%, rgba(194, 194, 194, 0.02) 40%, rgba(194, 194, 194, 0.02) 60%, rgba(34, 34, 34, 0.02) 60%, rgba(34, 34, 34, 0.02) 80%, rgba(71, 71, 71, 0.02) 80%, rgba(71, 71, 71, 0.02) 100%), linear-gradient(78deg, rgba(190, 190, 190, 0.02) 0%, rgba(190, 190, 190, 0.02) 20%, rgba(95, 95, 95, 0.02) 20%, rgba(95, 95, 95, 0.02) 40%, rgba(71, 71, 71, 0.02) 40%, rgba(71, 71, 71, 0.02) 60%, rgba(7, 7, 7, 0.02) 60%, rgba(7, 7, 7, 0.02) 80%, rgba(130, 130, 130, 0.02) 80%, rgba(130, 130, 130, 0.02) 100%), linear-gradient(293deg, rgba(213, 213, 213, 0.03) 0%, rgba(213, 213, 213, 0.03) 20%, rgba(220, 220, 220, 0.03) 20%, rgba(220, 220, 220, 0.03) 40%, rgba(146, 146, 146, 0.03) 40%, rgba(146, 146, 146, 0.03) 60%, rgba(57, 57, 57, 0.03) 60%, rgba(57, 57, 57, 0.03) 80%, rgba(120, 120, 120, 0.03) 80%, rgba(120, 120, 120, 0.03) 100%), linear-gradient(90deg, #530000, rgba(255, 0, 0, 0.322));
+  background-image: linear-gradient(131deg, rgba(186, 186, 186, 0.01) 0%, rgba(186, 186, 186, 0.01) 16.667%, rgba(192, 192, 192, 0.01) 16.667%, rgba(192, 192, 192, 0.01) 33.334%, rgba(48, 48, 48, 0.01) 33.334%, rgba(48, 48, 48, 0.01) 50.001%, rgba(33, 33, 33, 0.01) 50.001%, rgba(33, 33, 33, 0.01) 66.668%, rgba(182, 182, 182, 0.01) 66.668%, rgba(182, 182, 182, 0.01) 83.335%, rgba(211, 211, 211, 0.01) 83.335%, rgba(211, 211, 211, 0.01) 100.002%), linear-gradient(148deg, rgba(48, 48, 48, 0.01) 0%, rgba(48, 48, 48, 0.01) 16.667%, rgba(178, 178, 178, 0.01) 16.667%, rgba(178, 178, 178, 0.01) 33.334%, rgba(192, 192, 192, 0.01) 33.334%, rgba(192, 192, 192, 0.01) 50.001%, rgba(237, 237, 237, 0.01) 50.001%, rgba(237, 237, 237, 0.01) 66.668%, rgba(194, 194, 194, 0.01) 66.668%, rgba(194, 194, 194, 0.01) 83.335%, rgba(227, 227, 227, 0.01) 83.335%, rgba(227, 227, 227, 0.01) 100.002%), linear-gradient(138deg, rgba(146, 146, 146, 0.03) 0%, rgba(146, 146, 146, 0.03) 25%, rgba(33, 33, 33, 0.03) 25%, rgba(33, 33, 33, 0.03) 50%, rgba(46, 46, 46, 0.03) 50%, rgba(46, 46, 46, 0.03) 75%, rgba(172, 172, 172, 0.03) 75%, rgba(172, 172, 172, 0.03) 100%), linear-gradient(38deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 16.667%, rgba(28, 28, 28, 0.03) 16.667%, rgba(28, 28, 28, 0.03) 33.334%, rgba(236, 236, 236, 0.03) 33.334%, rgba(236, 236, 236, 0.03) 50.001%, rgba(3, 3, 3, 0.03) 50.001%, rgba(3, 3, 3, 0.03) 66.668%, rgba(207, 207, 207, 0.03) 66.668%, rgba(207, 207, 207, 0.03) 83.335%, rgba(183, 183, 183, 0.03) 83.335%, rgba(183, 183, 183, 0.03) 100.002%), linear-gradient(145deg, rgba(20, 20, 20, 0.02) 0%, rgba(20, 20, 20, 0.02) 20%, rgba(4, 4, 4, 0.02) 20%, rgba(4, 4, 4, 0.02) 40%, rgba(194, 194, 194, 0.02) 40%, rgba(194, 194, 194, 0.02) 60%, rgba(34, 34, 34, 0.02) 60%, rgba(34, 34, 34, 0.02) 80%, rgba(71, 71, 71, 0.02) 80%, rgba(71, 71, 71, 0.02) 100%), linear-gradient(78deg, rgba(190, 190, 190, 0.02) 0%, rgba(190, 190, 190, 0.02) 20%, rgba(95, 95, 95, 0.02) 20%, rgba(95, 95, 95, 0.02) 40%, rgba(71, 71, 71, 0.02) 40%, rgba(71, 71, 71, 0.02) 60%, rgba(7, 7, 7, 0.02) 60%, rgba(7, 7, 7, 0.02) 80%, rgba(130, 130, 130, 0.02) 80%, rgba(130, 130, 130, 0.02) 100%), linear-gradient(293deg, rgba(213, 213, 213, 0.03) 0%, rgba(213, 213, 213, 0.03) 20%, rgba(220, 220, 220, 0.03) 20%, rgba(220, 220, 220, 0.03) 40%, rgba(146, 146, 146, 0.03) 40%, rgba(146, 146, 146, 0.03) 60%, rgba(57, 57, 57, 0.03) 60%, rgba(57, 57, 57, 0.03) 80%, rgba(120, 120, 120, 0.03) 80%, rgba(120, 120, 120, 0.03) 100%), linear-gradient(90deg, #530000, rgba(255, 115, 0, 0.247));
 }
 
-.prjgradient h1 {
-  position: absolute;
-  top: 30px;
-  left: 40px;
-  font-size: 140px;
-  width: 800px;
-  line-height: 130px;
-  color: white;
-}
-
-.prjgradient .projects {
+.project-gradient .projects {
   font-family: "Barlow-r";
   display: -ms-grid;
   display: grid;
   position: absolute;
   margin: auto;
-  width: 70%;
+  width: calc(70% + (1920px - 100%));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -40,7 +30,7 @@
   font-size: 22px;
 }
 
-.prjgradient .projects .projectCard {
+.project-gradient .projects .projectCard {
   position: relative;
   display: block;
   height: 0;
@@ -51,7 +41,7 @@
   background-color: rgba(61, 3, 1, 0.705);
 }
 
-.prjgradient .projects .projectCard:hover .image {
+.project-gradient .projects .projectCard:hover .image {
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
   -webkit-transition: opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -61,15 +51,17 @@
   opacity: 0;
 }
 
-.prjgradient .projects .projectCard:hover .desc {
+.project-gradient .projects .projectCard:hover .desc {
+  -webkit-transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   opacity: 1;
 }
 
-.prjgradient .projects .projectCard:hover .btnwrap {
+.project-gradient .projects .projectCard:hover .btnwrap {
   opacity: 1;
 }
 
-.prjgradient .projects .projectCard .image {
+.project-gradient .projects .projectCard .image {
   -webkit-transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -89,25 +81,23 @@
   font-family: "Barlow-r";
 }
 
-.prjgradient .projects .projectCard .image#game {
+.project-gradient .projects .projectCard .image#game {
   background-image: url(./images/Game.png);
 }
 
-.prjgradient .projects .projectCard .image#recipes {
+.project-gradient .projects .projectCard .image#recipes {
   background-image: url(./images/Recipe.png);
 }
 
-.prjgradient .projects .projectCard .image#label {
+.project-gradient .projects .projectCard .image#label {
   background-image: url(./images/Label.png);
 }
 
-.prjgradient .projects .projectCard .image#portfolio {
+.project-gradient .projects .projectCard .image#portfolio {
   background-image: url(./images/portfolio.png);
 }
 
-.prjgradient .projects .projectCard .desc {
-  -webkit-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+.project-gradient .projects .projectCard .desc {
   opacity: 0;
   position: absolute;
   top: 14%;
@@ -120,11 +110,11 @@
   z-index: 4;
 }
 
-.prjgradient .projects .projectCard .desc .highlight {
+.project-gradient .projects .projectCard .desc .highlight {
   color: #fdf912;
 }
 
-.prjgradient .projects .projectCard .btnwrap {
+.project-gradient .projects .projectCard .btnwrap {
   -webkit-transition: opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
   opacity: 0;
@@ -143,7 +133,7 @@
   z-index: 4;
 }
 
-.prjgradient .projects .projectCard .btnwrap .project-button {
+.project-gradient .projects .projectCard .btnwrap .project-button {
   display: -ms-grid;
   display: grid;
   z-index: 4;
@@ -155,9 +145,16 @@
   text-align: center;
   border: 2.2px solid #fd3d3d;
   border-radius: 25px;
+  cursor: pointer;
 }
 
-.prjgradient .projects .projectCard .btnwrap .project-button:hover {
+.project-gradient .projects .projectCard .btnwrap .project-button:hover {
   background-color: #fd3d3d;
+}
+
+@media (max-width: 1550px) {
+  .project-gradient .projects {
+    width: 94%;
+  }
 }
 /*# sourceMappingURL=Projects.css.map */
