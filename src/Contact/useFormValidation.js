@@ -39,7 +39,7 @@ function useFormValidation(initialState, validate) {
       }
     }
   }, [errors]);
-
+console.log("ds")
   function handleChange(event) {
     setValues({
       ...values,
