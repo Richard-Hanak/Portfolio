@@ -1,14 +1,14 @@
 export default function validateAuth(values, field) {
   let errors = {};
 
-  if (field == "email") {
+  if (field === "email") {
     if (!values.email) {
       errors.email = "Required Email";
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{1,}$/i.test(values.email)) {
       errors.email = "Invalid email address";
     }
     return errors;
-  } else if (field == "message") {
+  } else if (field === "message") {
     if (!values.message) {
       errors.message = "Required message";
     } else if (values.message.length < 20) {

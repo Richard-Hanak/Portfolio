@@ -86,7 +86,37 @@
           box-shadow: 0 0 10px 5px rgba(191, 206, 214, 0.658);
 }
 
+.contact-gradient .form-wrap form #thx {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 86px;
+  z-index: 1;
+  width: 100%;
+  height: 160px;
+  padding: 0 46px;
+  padding-bottom: 8px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  background-color: rgba(255, 0, 76, 0.493);
+  color: white;
+  border-radius: 18px;
+  opacity: 0;
+}
+
+.contact-gradient .form-wrap form .transition-thx {
+  opacity: 1 !important;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
 .contact-gradient .form-wrap form #message {
+  opacity: 1;
   width: 100%;
   height: 160px;
   padding: 12px 16px;
@@ -97,12 +127,19 @@
   border-radius: 18px;
   -webkit-box-shadow: 0 0 10px 2px rgba(48, 48, 48, 0.404);
           box-shadow: 0 0 10px 2px rgba(48, 48, 48, 0.404);
+  z-index: 2;
 }
 
 .contact-gradient .form-wrap form #message:focus {
   outline: none;
   -webkit-box-shadow: 0 0 10px 5px rgba(191, 206, 214, 0.658);
           box-shadow: 0 0 10px 5px rgba(191, 206, 214, 0.658);
+}
+
+.contact-gradient .form-wrap form .transition-message {
+  opacity: 0 !important;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
 }
 
 .contact-gradient .form-wrap form #mail.error-input {
@@ -123,12 +160,10 @@
   font-family: "Barlow-r";
 }
 
-.contact-gradient .form-wrap form .submit {
+.contact-gradient .form-wrap form #submit {
   position: relative;
   bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  margin: 0 auto;
   font-size: 20px;
   border: 0;
   height: 46px;
@@ -141,12 +176,34 @@
   cursor: pointer;
 }
 
-.contact-gradient .form-wrap form .submit:hover {
+.contact-gradient .form-wrap form #submit:hover {
   background-color: #d8255b;
 }
 
-.contact-gradient .form-wrap form .submit:focus {
+.contact-gradient .form-wrap form #submit:focus {
   outline: none;
   background-color: #d8255b;
+}
+
+.contact-gradient .form-wrap form .transition-mail {
+  -webkit-transform: translate(0, 300%);
+          transform: translate(0, 300%);
+  -webkit-transition: opacity 200ms, -webkit-transform ease-out 400ms;
+  transition: opacity 200ms, -webkit-transform ease-out 400ms;
+  transition: transform ease-out 400ms, opacity 200ms;
+  transition: transform ease-out 400ms, opacity 200ms, -webkit-transform ease-out 400ms;
+  z-index: 0;
+  opacity: 0;
+}
+
+.contact-gradient .form-wrap form .transition-sendButton {
+  -webkit-transform: translate(0, -300%);
+          transform: translate(0, -300%);
+  -webkit-transition: opacity 200ms, -webkit-transform ease-out 400ms;
+  transition: opacity 200ms, -webkit-transform ease-out 400ms;
+  transition: transform ease-out 400ms, opacity 200ms;
+  transition: transform ease-out 400ms, opacity 200ms, -webkit-transform ease-out 400ms;
+  z-index: 0;
+  opacity: 0;
 }
 /*# sourceMappingURL=Contact.css.map */

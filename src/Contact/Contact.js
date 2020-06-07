@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import pdf from "./a.pdf";
 import useFormValidation from "./useFormValidation";
@@ -6,7 +6,7 @@ import validateFormWarning from "./validateFormWarning";
 
 const INITIAL_STATE = {
   email: "",
-  message: ""
+  message: "",
 };
 
 const Contact = ({ setScrollToPage }) => {
@@ -47,10 +47,11 @@ const Contact = ({ setScrollToPage }) => {
             className={errors.message && "error-input"}
             autoComplete="off"
           ></textarea>
+          <div id="thx">Thank you for getting in touch</div>
           {errors.message && <p className="error-text">{errors.message}</p>}
 
           <input
-            className="submit"
+            id="submit"
             disabled={isSubmitting}
             type="submit"
             value="SEND"
@@ -61,16 +62,26 @@ const Contact = ({ setScrollToPage }) => {
         <p className="text-contact">
           Send me a message and I will get back to you within 24 hours or check
           my{"  "}
-          <a href={pdf} className="link-contact" target="_blank">
+          <a href={pdf} className="link-contact" target="_blank" rel="noopener noreferrer">
             <b>Resume</b>
           </a>
           .
         </p>
         <div className="socials">
-          <a href="https://github.com/Richard-Hanak" className="link-contact" target="_blank">
+          <a
+            href="https://github.com/Richard-Hanak"
+            className="link-contact"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/richard-hanak-212a491ab/" className="link-contact" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/richard-hanak-212a491ab/"
+            className="link-contact"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </a>
         </div>

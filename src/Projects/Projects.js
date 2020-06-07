@@ -7,7 +7,7 @@ function Projects({ setRenderElement, setProjectScroll,setScrollToPage }) {
       <div className="projects">
         <div className="projectCard">
           <div className="image" id="game"></div>
-          <p className="desc">
+          <p className="desc">A simple game to test your reactions, Highscore is being kept with node server.
             <p className="highlight">ReactJS {"&"} NodeJS.</p>
           </p>
           <div className="btnwrap">
@@ -33,10 +33,10 @@ function Projects({ setRenderElement, setProjectScroll,setScrollToPage }) {
         <div className="projectCard">
           <div className="image" id="recipes"></div>
           <p className="desc">
-            Created in{" "}
+            Cookbook using rest Api to dynamically display results.{" "}
             <p className="highlight">
               {" "}
-              ReactJS with hooks, router {"&"} contextApi.
+              ReactJS: hooks, router {"&"} contextApi.
             </p>
           </p>
           <div className="btnwrap">
@@ -69,10 +69,10 @@ function Projects({ setRenderElement, setProjectScroll,setScrollToPage }) {
         <div className="projectCard">
           <div className="image" id="portfolio"></div>
           <p className="desc">
-            Created in{" "}
+            Page transitions using react libraries. CustomHook form validation.{" "}
             <p className="highlight">
               {" "}
-              ReactJS with hooks, router {"&"} contextApi.
+              ReactJS {"&"} NodeJS.
             </p>
           </p>
           <div className="btnwrap">

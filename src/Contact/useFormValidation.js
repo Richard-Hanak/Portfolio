@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function useFormValidation(initialState, validate) {
   const [values, setValues] = useState(initialState);
   const [errors, setErrors] = useState({});
   const [isSubmitting, setSubmitting] = useState(false);
+  const [confirmSubmit, setConfirmSubmit] = useState(false);
 
   useEffect(() => {
     if (isSubmitting) {
@@ -21,12 +22,18 @@ function useFormValidation(initialState, validate) {
           .then((response) => response.json())
           .then((response) => {
             if (response.status === "success") {
-              alert("Message Sent.");
-            } else if (response.status === "fail") {
-              alert("Message failed to send.");
+              setConfirmSubmit(true);
             }
           });
         setSubmitting(false);
+        (function () {
+          document.getElementById("mail").classList.add("transition-mail");
+          document.getElementById("message").classList.add("transition-message");
+          document.getElementById("thx").classList.add("transition-thx");
+          document
+            .getElementById("submit")
+            .classList.add("transition-sendButton");
+        })();
       } else {
         setSubmitting(false);
       }
@@ -55,6 +62,7 @@ function useFormValidation(initialState, validate) {
     values,
     errors,
     isSubmitting,
+    confirmSubmit,
   };
 }
 
