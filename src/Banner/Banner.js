@@ -1,12 +1,18 @@
 import React from "react";
 
-const Banner = ({setScrollToPage}) => {
+const Banner = ({ setScrollToPage, setLanguage, language }) => {
+  
+
   return (
     <div className="banner-gradient">
       <h1 className="hi">
         Hello.
         <br /> I am Richard
       </h1>
+      <div className="language">
+        <div id="EN" className={language === "EN" ? "language-toggled" : null} onClick={() => setLanguage("EN")}></div>
+        <div id="SK" className={language === "SK" ? "language-toggled" : null} onClick={() => setLanguage("SK")}></div>
+      </div>
       <h3 className="sub">a Web Developer.</h3>
       <h3>Technologies I use</h3>
       <p className="technologies">

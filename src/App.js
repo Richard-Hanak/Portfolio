@@ -16,6 +16,7 @@ import "./Projects/RecipesApi/App/Home.css";
 import "./App.css";
 
 function App() {
+  const [language, setLanguage] = useState("EN");
   const [projectScroll, setProjectScroll] = useState(false);
   const [scrollToPage, setScrollToPage] = useState();
   const [renderElement, setRenderElement] = useState("slide-three");
@@ -47,12 +48,15 @@ function App() {
       >
         <Slide>
           <div className="background" id="slide-one">
-            <Banner setScrollToPage={setScrollToPage} />
+            <Banner setScrollToPage={setScrollToPage}
+            language={language}
+            setLanguage={setLanguage} />
           </div>
         </Slide>
         <Slide>
           <div className="background" id="slide-two">
             <Projects
+            language={language}
               setScrollToPage={setScrollToPage}
               setRenderElement={setRenderElement}
               setProjectScroll={setProjectScroll}
@@ -80,7 +84,8 @@ function App() {
             ) : renderElement === "LabelCreator" ? (
               <LabelCreator />
             ) : (
-              <Contact setScrollToPage={setScrollToPage} />
+              <Contact setScrollToPage={setScrollToPage}
+              language={language} />
             )}
           </div>
         </Slide>

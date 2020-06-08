@@ -70,7 +70,31 @@
       rgba(108, 108, 108, 0.03) 100%
     ),
     linear-gradient(90deg, rgb(56, 29, 153), rgba(36, 250, 250, 0.233));
-
+  .language {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    #SK {
+      height: 40px;
+      width: 46px;
+      background-image: url(./Banner/iconfinder_Slovakia_92337.png);
+      background-size: cover;
+      overflow: hidden;
+      }
+    #EN {
+      height: 40px;
+      width: 46px;
+      background-image: url(./Banner/iconfinder_United-Kingdom_92403.png);
+      background-size: cover;
+      overflow: hidden;
+    }
+    .language-toggled {
+      height: 46px !important;
+      width: 58px !important;
+    }
+  }
   .hi {
     position: absolute;
     top: 30px;
