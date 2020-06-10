@@ -211,11 +211,53 @@
       }
     }
   }
+
+  #btn {
+    position: absolute;
+    left: 48px;
+    top: 100%;
+    transform: translate(0, -100%);
+    text-align: center;
+    line-height: 74px;
+    font-size: 34px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    padding-left:34px;
+    padding-right:64px;
+    border: solid 2px white;
+    border-bottom: none;
+    z-index: 100;
+    cursor: pointer;
+    &.contact {
+      left: 490px;
+    }
+    svg {
+      position: absolute;
+      top: 36px;
+      fill: white;
+      right: 24px;
+      margin-right: 10px;
+    }
+    &:hover {
+      font-weight: 700;
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.486);
+      mix-blend-mode: screen;
+      svg {
+        fill: rgb(43, 0, 0);
+      }
+    }
+    .arrow-up {
+      transform: rotate(180deg);
+      top: 34px;
+    }
+  }
 }
 
 @media (max-width: 1550px) {
   .project-gradient {
-  .projects {
-    width: 94%;
-  }}
+    .projects {
+      width: 94%;
+    }
+  }
 }

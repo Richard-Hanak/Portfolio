@@ -100,8 +100,17 @@
     top: 30px;
     left: 40px;
     font-size: 140px;
-    width: 800px;
+    width: 1020px;
     line-height: 130px;
+    color: rgb(255, 255, 255);
+  }
+  .ahoj {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 140px;
+    width: 1020px;
+    line-height: 140px;
     color: rgb(255, 255, 255);
   }
 
@@ -116,8 +125,14 @@
   }
 
   .sub {
+    position: relative;
     top: 290px;
-    left: 48px;
+    font-size: 56px;
+    color: rgb(139, 139, 139);
+  }
+  .subSK {
+    position: relative;
+    top: 310px;
     font-size: 56px;
     color: rgb(139, 139, 139);
   }
@@ -134,17 +149,45 @@
 
   #btn {
     position: absolute;
+    left: 48px;
     top: 100%;
     transform: translate(0, -100%);
-    width: 240px;
     text-align: center;
     line-height: 74px;
     font-size: 34px;
     letter-spacing: 1px;
     color: rgb(255, 255, 255);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left:34px;
+    padding-right:64px;
     border: solid 2px white;
     border-bottom: none;
-  }
+    z-index: 100;
+    cursor: pointer;
+    &.contact {
+      left: 490px;
+    }
+    svg {
+      position: absolute;
+      top: 36px;
+      fill: white;
+      right: 24px;
+      margin-right: 10px;
+    }
+    .doubleArrow-top {
+      position: absolute;
+      top: 28px;
+    }
+    .doubleArrow-bot {
+      position: absolute;
+      top: 42px;
+    }
+    &:hover {
+      font-weight: 700;
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.486);
+      mix-blend-mode: screen;
+      svg {
+        fill: rgb(18, 8, 53);
+      }
+    }}
 }

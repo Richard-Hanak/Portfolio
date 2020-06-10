@@ -5,19 +5,18 @@ const Banner = ({ setScrollToPage, setLanguage, language }) => {
 
   return (
     <div className="banner-gradient">
-      <h1 className="hi">
-        Hello.
-        <br /> I am Richard
+      <h1 className={language === "EN" ? "hi" : "ahoj"}>
+        {language === "EN" ? "Hello." : "Ahoj."}
+        <br /> {language === "EN" ? "I am Richard" : "Volám sa Richard"}
       </h1>
       <div className="language">
         <div id="EN" className={language === "EN" ? "language-toggled" : null} onClick={() => setLanguage("EN")}></div>
         <div id="SK" className={language === "SK" ? "language-toggled" : null} onClick={() => setLanguage("SK")}></div>
       </div>
-      <h3 className="sub">a Web Developer.</h3>
-      <h3>Technologies I use</h3>
+      <h3 className={language === "EN" ? "sub" : "subSK"}>{language === "EN" ? "a Web Developer." : "Webový Developer."}</h3>
+      <h3>{language === "EN" ? "Technologies I use" : "Technológie, ktoré používam"}</h3>
       <p className="technologies">
-        Html5, Css3, Scss, JavaScript, ReactJS, NodeJS, GitHub, Adobe XD,
-        Photoshop.
+        Html5, Css3, Scss, JavaScript, ReactJS, NodeJS, Express, GitHub, Adobe XD.
       </p>
       <p
         id="btn"
@@ -32,7 +31,7 @@ const Banner = ({ setScrollToPage, setLanguage, language }) => {
         <svg className="doubleArrow-bot" height="13" width="22">
           <path d="m0.391254,0.569045l10.638666,11.973533l10.638666,-11.973533l-21.277331,0z" />
         </svg>
-        Contact me
+        {language === "EN" ? "Contact me" : "Kontakt"}
       </p>
       <p
         id="btn"
@@ -41,7 +40,7 @@ const Banner = ({ setScrollToPage, setLanguage, language }) => {
           setScrollToPage(1);
         }}
       >
-        Projects
+        {language === "EN" ? "Projects" : "Projekty" }
         <svg height="13" width="22">
           <path d="m0.391254,0.569045l10.638666,11.973533l10.638666,-11.973533l-21.277331,0z" />
         </svg>

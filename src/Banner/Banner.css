@@ -43,8 +43,18 @@
   top: 30px;
   left: 40px;
   font-size: 140px;
-  width: 800px;
+  width: 1020px;
   line-height: 130px;
+  color: white;
+}
+
+.banner-gradient .ahoj {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-size: 140px;
+  width: 1020px;
+  line-height: 140px;
   color: white;
 }
 
@@ -59,8 +69,15 @@
 }
 
 .banner-gradient .sub {
+  position: relative;
   top: 290px;
-  left: 48px;
+  font-size: 56px;
+  color: #8b8b8b;
+}
+
+.banner-gradient .subSK {
+  position: relative;
+  top: 310px;
   font-size: 56px;
   color: #8b8b8b;
 }
@@ -77,18 +94,53 @@
 
 .banner-gradient #btn {
   position: absolute;
+  left: 48px;
   top: 100%;
   -webkit-transform: translate(0, -100%);
           transform: translate(0, -100%);
-  width: 240px;
   text-align: center;
   line-height: 74px;
   font-size: 34px;
   letter-spacing: 1px;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 34px;
+  padding-right: 64px;
   border: solid 2px white;
   border-bottom: none;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.banner-gradient #btn.contact {
+  left: 490px;
+}
+
+.banner-gradient #btn svg {
+  position: absolute;
+  top: 36px;
+  fill: white;
+  right: 24px;
+  margin-right: 10px;
+}
+
+.banner-gradient #btn .doubleArrow-top {
+  position: absolute;
+  top: 28px;
+}
+
+.banner-gradient #btn .doubleArrow-bot {
+  position: absolute;
+  top: 42px;
+}
+
+.banner-gradient #btn:hover {
+  font-weight: 700;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.486);
+  mix-blend-mode: screen;
+}
+
+.banner-gradient #btn:hover svg {
+  fill: #120835;
 }
 /*# sourceMappingURL=Banner.css.map */

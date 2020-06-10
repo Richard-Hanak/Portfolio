@@ -180,6 +180,54 @@
   background-color: #fd3d3d;
 }
 
+.project-gradient #btn {
+  position: absolute;
+  left: 48px;
+  top: 100%;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  text-align: center;
+  line-height: 74px;
+  font-size: 34px;
+  letter-spacing: 1px;
+  color: white;
+  padding-left: 34px;
+  padding-right: 64px;
+  border: solid 2px white;
+  border-bottom: none;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.project-gradient #btn.contact {
+  left: 490px;
+}
+
+.project-gradient #btn svg {
+  position: absolute;
+  top: 36px;
+  fill: white;
+  right: 24px;
+  margin-right: 10px;
+}
+
+.project-gradient #btn:hover {
+  font-weight: 700;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.486);
+  mix-blend-mode: screen;
+}
+
+.project-gradient #btn:hover svg {
+  fill: #2b0000;
+}
+
+.project-gradient #btn .arrow-up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 34px;
+}
+
 @media (max-width: 1550px) {
   .project-gradient .projects {
     width: 94%;
@@ -246,8 +294,18 @@
   top: 30px;
   left: 40px;
   font-size: 140px;
-  width: 800px;
+  width: 1020px;
   line-height: 130px;
+  color: white;
+}
+
+.banner-gradient .ahoj {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-size: 140px;
+  width: 1020px;
+  line-height: 140px;
   color: white;
 }
 
@@ -262,8 +320,15 @@
 }
 
 .banner-gradient .sub {
+  position: relative;
   top: 290px;
-  left: 48px;
+  font-size: 56px;
+  color: #8b8b8b;
+}
+
+.banner-gradient .subSK {
+  position: relative;
+  top: 310px;
   font-size: 56px;
   color: #8b8b8b;
 }
@@ -280,19 +345,54 @@
 
 .banner-gradient #btn {
   position: absolute;
+  left: 48px;
   top: 100%;
   -webkit-transform: translate(0, -100%);
           transform: translate(0, -100%);
-  width: 240px;
   text-align: center;
   line-height: 74px;
   font-size: 34px;
   letter-spacing: 1px;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 34px;
+  padding-right: 64px;
   border: solid 2px white;
   border-bottom: none;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.banner-gradient #btn.contact {
+  left: 490px;
+}
+
+.banner-gradient #btn svg {
+  position: absolute;
+  top: 36px;
+  fill: white;
+  right: 24px;
+  margin-right: 10px;
+}
+
+.banner-gradient #btn .doubleArrow-top {
+  position: absolute;
+  top: 28px;
+}
+
+.banner-gradient #btn .doubleArrow-bot {
+  position: absolute;
+  top: 42px;
+}
+
+.banner-gradient #btn:hover {
+  font-weight: 700;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.486);
+  mix-blend-mode: screen;
+}
+
+.banner-gradient #btn:hover svg {
+  fill: #120835;
 }
 
 .contact-gradient {
@@ -469,6 +569,7 @@
   -webkit-box-shadow: 0 0 10px 2px rgba(48, 48, 48, 0.404);
           box-shadow: 0 0 10px 2px rgba(48, 48, 48, 0.404);
   color: white;
+  padding-top: 2px;
   border-radius: 40px;
   cursor: pointer;
 }
@@ -502,6 +603,58 @@
   transition: transform ease-out 400ms, opacity 200ms, -webkit-transform ease-out 400ms;
   z-index: 0;
   opacity: 0;
+}
+
+.contact-gradient #btn {
+  position: absolute;
+  left: 48px;
+  top: 100%;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  text-align: center;
+  line-height: 74px;
+  font-size: 34px;
+  letter-spacing: 1px;
+  color: white;
+  padding-left: 34px;
+  padding-right: 64px;
+  border: solid 2px white;
+  border-bottom: none;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.contact-gradient #btn.prjects {
+  left: 470px;
+}
+
+.contact-gradient #btn svg {
+  position: absolute;
+  top: 34px;
+  fill: white;
+  right: 24px;
+  margin-right: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.contact-gradient #btn .doubleArrowUp-top {
+  top: 26px;
+}
+
+.contact-gradient #btn .doubleArrowUp-bot {
+  top: 40px;
+}
+
+.contact-gradient #btn:hover {
+  font-weight: 700;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.486);
+  mix-blend-mode: screen;
+}
+
+.contact-gradient #btn:hover svg {
+  fill: #041a02;
 }
 
 @font-face {
@@ -553,83 +706,9 @@
   color: white;
 }
 
-#scroll-wrap #btn {
-  position: absolute;
-  top: 100%;
-  -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
-  width: 240px;
-  text-align: center;
-  line-height: 74px;
-  font-size: 34px;
-  letter-spacing: 1px;
-  color: white;
-  padding-right: 20px;
-  border: solid 2px white;
-  border-bottom: none;
-  z-index: 100;
-  cursor: pointer;
-}
-
-#scroll-wrap #btn.home {
-  width: 208px;
-  left: 48px;
-  padding-right: 30px;
-}
-
-#scroll-wrap #btn.contact {
-  left: 470px;
-  width: 280px;
-  padding-right: 60px;
-}
-
-#scroll-wrap #btn svg {
-  position: relative;
-  top: -2px;
-  fill: white;
-}
-
-#scroll-wrap #btn:hover {
-  font-weight: 700;
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.486);
-  mix-blend-mode: screen;
-}
-
 #scroll-wrap #slide-one {
   position: absolute;
   width: 100%;
-}
-
-#scroll-wrap #slide-one #btn:hover svg {
-  fill: #120835;
-}
-
-#scroll-wrap #slide-one #btn.prjects {
-  left: 48px;
-  padding-left: 14px;
-}
-
-#scroll-wrap #slide-one #btn.contact {
-  left: 490px;
-  padding-right: 53px;
-}
-
-#scroll-wrap #slide-one #btn svg {
-  left: 10px;
-  margin-right: 10px;
-}
-
-#scroll-wrap #slide-one #btn .doubleArrow-top {
-  position: absolute;
-  top: 28px;
-  left: 223px;
-}
-
-#scroll-wrap #slide-one #btn .doubleArrow-bot {
-  position: absolute;
-  top: 42px;
-  left: 223px;
 }
 
 #scroll-wrap #slide-two {
@@ -638,61 +717,10 @@
   width: 100%;
 }
 
-#scroll-wrap #slide-two #btn:hover svg {
-  fill: #2b0000;
-}
-
-#scroll-wrap #slide-two #btn svg {
-  left: 210px;
-}
-
-#scroll-wrap #slide-two #btn .arrow-up {
-  position: absolute;
-  top: 35px;
-  left: 140px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
 #scroll-wrap #slide-three {
   position: absolute;
   height: 100vh;
   overflow-y: auto;
   width: 100%;
-}
-
-#scroll-wrap #slide-three #btn:hover svg {
-  fill: #041a02;
-}
-
-#scroll-wrap #slide-three #btn.prjects {
-  left: 470px;
-  padding-right: 46px;
-}
-
-#scroll-wrap #slide-three #btn svg {
-  left: 160px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#scroll-wrap #slide-three #btn .doubleArrowUp-top {
-  position: absolute;
-  top: 26px;
-  left: 141px;
-}
-
-#scroll-wrap #slide-three #btn .doubleArrowUp-bot {
-  position: absolute;
-  top: 40px;
-  left: 141px;
-}
-
-#scroll-wrap #slide-three #btn .up {
-  position: absolute;
-  top: 35px;
-  left: 140px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 /*# sourceMappingURL=App.css.map */

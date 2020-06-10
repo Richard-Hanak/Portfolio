@@ -172,6 +172,7 @@
   -webkit-box-shadow: 0 0 10px 2px rgba(48, 48, 48, 0.404);
           box-shadow: 0 0 10px 2px rgba(48, 48, 48, 0.404);
   color: white;
+  padding-top: 2px;
   border-radius: 40px;
   cursor: pointer;
 }
@@ -205,5 +206,57 @@
   transition: transform ease-out 400ms, opacity 200ms, -webkit-transform ease-out 400ms;
   z-index: 0;
   opacity: 0;
+}
+
+.contact-gradient #btn {
+  position: absolute;
+  left: 48px;
+  top: 100%;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  text-align: center;
+  line-height: 74px;
+  font-size: 34px;
+  letter-spacing: 1px;
+  color: white;
+  padding-left: 34px;
+  padding-right: 64px;
+  border: solid 2px white;
+  border-bottom: none;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.contact-gradient #btn.prjects {
+  left: 470px;
+}
+
+.contact-gradient #btn svg {
+  position: absolute;
+  top: 34px;
+  fill: white;
+  right: 24px;
+  margin-right: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.contact-gradient #btn .doubleArrowUp-top {
+  top: 26px;
+}
+
+.contact-gradient #btn .doubleArrowUp-bot {
+  top: 40px;
+}
+
+.contact-gradient #btn:hover {
+  font-weight: 700;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.486);
+  mix-blend-mode: screen;
+}
+
+.contact-gradient #btn:hover svg {
+  fill: #041a02;
 }
 /*# sourceMappingURL=Contact.css.map */

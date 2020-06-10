@@ -9,7 +9,7 @@ const INITIAL_STATE = {
   message: "",
 };
 
-const Contact = ({ setScrollToPage }) => {
+const Contact = ({ setScrollToPage, language }) => {
   const {
     handleChange,
     handleSubmit,
@@ -20,14 +20,14 @@ const Contact = ({ setScrollToPage }) => {
 
   return (
     <div className="contact-gradient">
-      <h1 className="headline">Contact</h1>
+      <h1 className="headline">{language === "EN" ? "Contact" : "Kontakt"}</h1>
       <div className="form-wrap">
         <form className=".contact" onSubmit={handleSubmit}>
           <div className="mail-wrap">
             <input
               id="mail"
               type="text"
-              placeholder="Your e-mail"
+              placeholder={language === "EN" ? "Your e-mail" : "Váš e-mail"}
               onChange={handleChange}
               value={values.email}
               name="email"
@@ -38,7 +38,7 @@ const Contact = ({ setScrollToPage }) => {
           {errors.email && <p className="error-text">{errors.email}</p>}
           <textarea
             id="message"
-            placeholder="message"
+            placeholder={language === "EN" ? "message" : "správa"}
             rows="4"
             cols="50"
             onChange={handleChange}
@@ -47,23 +47,22 @@ const Contact = ({ setScrollToPage }) => {
             className={errors.message && "error-input"}
             autoComplete="off"
           ></textarea>
-          <div id="thx">Thank you for getting in touch</div>
+          <div id="thx">{language === "EN" ? "Thank you for getting in touch." : "Ďakujem že ste ma kontaktovali."}</div>
           {errors.message && <p className="error-text">{errors.message}</p>}
 
           <input
             id="submit"
             disabled={isSubmitting}
             type="submit"
-            value="SEND"
+            value={language === "EN" ? "SEND" : "POSLAŤ"}
           />
         </form>
       </div>
       <div className="wrap-contact-text">
         <p className="text-contact">
-          Send me a message and I will get back to you within 24 hours or check
-          my{"  "}
+        {language === "EN" ? "Send me a message and I will get back to you within 24 hours or check my  " : "Pošlite mi správu a zvyčajne sa ozvem do 24 hodín alebo si pozrite moje  "}
           <a href={pdf} className="link-contact" target="_blank" rel="noopener noreferrer">
-            <b>Resume</b>
+            <b>CV</b>
           </a>
           .
         </p>
@@ -96,7 +95,7 @@ const Contact = ({ setScrollToPage }) => {
         <svg height="13" width="22">
           <path d="m0.391254,0.569045l10.638666,11.973533l10.638666,-11.973533l-21.277331,0z" />
         </svg>
-        Projects
+        {language === "EN" ? "Projects" : "Projekty"}
       </p>
       <p
         id="btn"
@@ -105,7 +104,7 @@ const Contact = ({ setScrollToPage }) => {
           setScrollToPage(0);
         }}
       >
-        Home
+        {language === "EN" ? "Home" : "Domov"}
         <svg className="doubleArrowUp-top" height="13" width="22">
           <path d="m0.391254,0.569045l10.638666,11.973533l10.638666,-11.973533l-21.277331,0z" />
         </svg>

@@ -1,13 +1,13 @@
 import React from "react";
 
-function Projects({ setRenderElement, setProjectScroll,setScrollToPage }) {
+function Projects({ setRenderElement, setProjectScroll, setScrollToPage, language }) {
   return (
     <div className="project-gradient">
-      <h1 className="headline"> Projects </h1>
+      <h1 className="headline"> {language === "EN" ? "Projects" : "Projekty"} </h1>
       <div className="projects">
         <div className="projectCard">
           <div className="image" id="game"></div>
-          <p className="desc">A simple game to test your reactions, Highscore is being kept with node server.
+          <p className="desc">{language === "EN" ? "Co-ordination testing game. The highscore database is being kept by node server." : "Hra, ktorá otestuje vašu koordináciu. highscore databáza je udržiavaná na node serveri."}
             <p className="highlight">ReactJS {"&"} NodeJS.</p>
           </p>
           <div className="btnwrap">
@@ -33,9 +33,8 @@ function Projects({ setRenderElement, setProjectScroll,setScrollToPage }) {
         <div className="projectCard">
           <div className="image" id="recipes"></div>
           <p className="desc">
-            Cookbook using rest Api to dynamically display results.{" "}
+          {language === "EN" ? "Single page cookbook using api to dynamically display results." : "Single page receptár, ktorý používa api a dynamicky zobrazuje výsledky."} 
             <p className="highlight">
-              {" "}
               ReactJS: hooks, router {"&"} contextApi.
             </p>
           </p>
@@ -69,7 +68,7 @@ function Projects({ setRenderElement, setProjectScroll,setScrollToPage }) {
         <div className="projectCard">
           <div className="image" id="portfolio"></div>
           <p className="desc">
-            Page transitions using react libraries. CustomHook form validation.{" "}
+          {language === "EN" ? "Page transitions using react libraries. Custom hook form validation." : "Prechody stránok používajú react knižnice. Validácia formulára pomocou custom hookov."}
             <p className="highlight">
               {" "}
               ReactJS {"&"} NodeJS.
@@ -89,8 +88,8 @@ function Projects({ setRenderElement, setProjectScroll,setScrollToPage }) {
         <div className="projectCard">
           <div className="image" id="label"></div>
           <p className="desc">
-            App I developed for customer that creates shipping labels from Excel
-            sheets.
+          {language === "EN" ? "App I developed for customer that creates pirnt-ready shipping labels from Excel" : "Aplikácia, ktorú som vytvoril pre klienta. Z Excelu vyrába prepravné štítky pripravené na tlač."}
+
             <p className="highlight"> VanillaJS, Jquery {"&"} NodeJS.</p>
           </p>
           <div className="btnwrap">
@@ -131,7 +130,7 @@ function Projects({ setRenderElement, setProjectScroll,setScrollToPage }) {
         <svg height="13" width="22">
           <path d="m0.391254,0.569045l10.638666,11.973533l10.638666,-11.973533l-21.277331,0z" />
         </svg>
-        Contact me
+        {language === "EN" ? "Contact me" : "Kontakt"}
       </p>
       <p
         id="btn"
@@ -140,7 +139,7 @@ function Projects({ setRenderElement, setProjectScroll,setScrollToPage }) {
           setScrollToPage(0);
         }}
       >
-        Home
+        {language === "EN" ? "Home" : "Domov"}
         <svg className="arrow-up" height="13" width="22">
           <path d="m0.391254,0.569045l10.638666,11.973533l10.638666,-11.973533l-21.277331,0z" />
         </svg>

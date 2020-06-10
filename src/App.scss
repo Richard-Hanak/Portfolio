@@ -46,97 +46,16 @@
     color: rgb(255, 255, 255);
   }
 
-  #btn {
-    position: absolute;
-    top: 100%;
-    transform: translate(0, -100%);
-    width: 240px;
-    text-align: center;
-    line-height: 74px;
-    font-size: 34px;
-    letter-spacing: 1px;
-    color: rgb(255, 255, 255);
-    padding-right: 20px;
-    border: solid 2px white;
-    border-bottom: none;
-    z-index: 100;
-    cursor: pointer;
-    &.home {
-      width: 208px;
-      left: 48px;
-      padding-right: 30px;
-    }
-    &.contact {
-      left: 470px;
-      width: 280px;
-      padding-right: 60px;
-    }
-    svg {
-      position: relative;
-      top: -2px;
-      fill: white;
-    }
-    &:hover {
-      font-weight: 700;
-      color: #000;
-      background-color: rgba(255, 255, 255, 0.486);
-      mix-blend-mode: screen;
-    }
-  }
+
   #slide-one {
     position: absolute;
     width: 100%;
-    #btn {
-      &:hover {
-        svg {
-          fill: rgb(18, 8, 53);
-        }
-      }
-      &.prjects {
-        left: 48px;
-        padding-left: 14px;
-      }
-      &.contact {
-        left: 490px;
-        padding-right: 53px;
-      }
-      svg {
-        left: 10px;
-        margin-right: 10px;
-      }
-      .doubleArrow-top {
-        position: absolute;
-        top: 28px;
-        left: 223px;
-      }
-      .doubleArrow-bot {
-        position: absolute;
-        top: 42px;
-        left: 223px;
-      }
-    }
   }
 
   #slide-two {
     position: absolute;
     top: 100vh;
     width: 100%;
-    #btn {
-      &:hover {
-        svg {
-          fill: rgb(43, 0, 0);
-        }
-      } 
-      svg {
-        left: 210px;
-      }
-      .arrow-up {
-        position: absolute;
-        top: 35px;
-        left: 140px;
-        transform: rotate(180deg);
-      }
-    }
   }
 
   #slide-three {
@@ -144,37 +63,5 @@
     height: 100vh;
     overflow-y: auto;
     width: 100%;
-    #btn {
-      &:hover {
-        svg {
-          fill: rgb(4, 26, 2);
-        }
-      }
-      &.prjects {
-        left: 470px;
-        padding-right: 46px;
-      }
-      svg {
-        left: 160px;
-        transform: rotate(180deg);
-      }
-      .doubleArrowUp-top {  
-        position: absolute;
-        top: 26px;
-        left: 141px;
-      }
-      .doubleArrowUp-bot {
-        position: absolute;
-        top: 40px;
-        left: 141px;
-      }
-      
-      .up {
-        position: absolute;
-        top: 35px;
-        left: 140px;
-        transform: rotate(180deg);
-      }
-    }
   }
 }
