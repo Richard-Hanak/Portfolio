@@ -264,14 +264,109 @@
     }
   }
 }
+@media (max-width: 1600px) {
+  .contact-gradient {
+    .headline {
+      top: 0px;
+      font-size: 110px;
+    }
+    .contact-content {
+      top: 19%;
+      height: 72%;
+      .text-contact {
+        font-size: 26px;
+        width: 600px;
+      }
+      .form-wrap {
+        position: relative;
+        width: 640px;
+        height: 260px;
+        form {
+          height: 260px;
+          width: 360px;
+          #mail {
+            font-size: 18px;
+            height: 30px;
+            padding: 16px;
+            border-radius: 16px;
+          }
+          #thx {
+            top: 86px;
+            height: 160px;
+            padding: 0 46px;
+            padding-bottom: 8px;
+            text-align: center;
+            font-size: 40px;
+            border-radius: 18px;
+          }
+          #message {
+            height: 120px;
+            padding: 12px 16px;
+            font-size: 18px;
+            border-radius: 16px;
+          }
+          #submit {
+            font-size: 18px;
+            border: 0;
+            height: 36px;
+            width: 140px;
+            padding-top: 1px;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
 
-@media (max-width: 1450px) {
+    #btn {
+      line-height: 54px;
+      font-size: 24px;
+      &.prjects {
+        left: 420px;
+        white-space: nowrap;
+      }
+      svg {
+        position: absolute;
+        top: 24px;
+        fill: white;
+        right: 24px;
+        margin-right: 10px;
+        transform: rotate(180deg);
+      }
+      .doubleArrowUp-top {
+        top: 16px;
+      }
+      .doubleArrowUp-bot {
+        top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .contact-gradient {
+    .contact-content {
+      .socials {
+        width: 400px;
+        .link-socials {
+          font-size: 18px;
+          border-radius: 8px;
+          padding: 4px 12px;
+          padding-bottom: 6px;
+          &:hover {
+            background-color: rgb(216, 22, 80);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
   .contact-gradient {
     .contact-content {
       .socials {
         top: 55px;
         position: relative;
-        left: 100px;
+        left: 122px;
         transform: translate(0, -100%);
       }
     }
@@ -281,7 +376,6 @@
   .contact-gradient {
     .contact-content {
       .text-contact {
-        margin-left: 48px;
         width: 640px;
       }
     }

@@ -228,14 +228,50 @@
   top: 34px;
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1600px) {
+  .project-gradient .headline {
+    top: 0px;
+    font-size: 110px;
+  }
   .project-gradient .projects {
-    width: 94%;
+    padding-top: 64px;
+    width: 80%;
+  }
+  .project-gradient #btn {
+    line-height: 54px;
+    font-size: 24px;
+  }
+  .project-gradient #btn.contact {
+    left: 420px;
+    white-space: nowrap;
+  }
+  .project-gradient #btn svg {
+    position: absolute;
+    top: 24px;
+    fill: white;
+    right: 24px;
+    margin-right: 10px;
+  }
+  .project-gradient #btn .arrow-up {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    top: 24px;
+  }
+  .project-gradient .projects {
+    font-size: 20px;
+  }
+  .project-gradient .projects .projectCard .desc {
+    top: 10%;
+    width: 84%;
+  }
+  .project-gradient .projects .projectCard .btnwrap {
+    top: 70%;
   }
 }
 
 @media (max-width: 1250px) {
   .project-gradient .projects {
+    width: 90%;
     grid-gap: 15px;
     -ms-grid-columns: (42%)[6];
         grid-template-columns: repeat(6, 42%);
@@ -509,15 +545,62 @@
   fill: #120835;
 }
 
+@media (max-width: 1600px) {
+  .banner-gradient .hi,
+  .banner-gradient .ahoj {
+    top: 10px;
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .banner-gradient .sub,
+  .banner-gradient .subSK {
+    position: absolute;
+    top: 220px;
+    font-size: 50px;
+    color: #8b8b8b;
+  }
+  .banner-gradient .technologies-wrap {
+    top: 60%;
+  }
+  .banner-gradient .technologies-wrap h3 {
+    font-size: 30px;
+    width: 800px;
+    margin-bottom: 12px;
+  }
+  .banner-gradient .technologies-wrap .technologies {
+    left: 22px;
+    font-size: 20px;
+    width: 500px;
+  }
+  .banner-gradient #btn {
+    line-height: 54px;
+    font-size: 24px;
+  }
+  .banner-gradient #btn.contact {
+    left: 420px;
+    white-space: nowrap;
+  }
+  .banner-gradient #btn svg {
+    position: absolute;
+    top: 24px;
+    fill: white;
+    right: 24px;
+    margin-right: 10px;
+  }
+  .banner-gradient #btn .doubleArrow-top {
+    position: absolute;
+    top: 18px;
+  }
+  .banner-gradient #btn .doubleArrow-bot {
+    position: absolute;
+    top: 32px;
+  }
+}
+
 @media (max-width: 1090px) {
   .banner-gradient .ahoj {
-    position: absolute;
-    top: 30px;
     left: 40px;
-    font-size: 120px;
     width: 1020px;
-    line-height: 140px;
-    color: white;
   }
 }
 
@@ -537,7 +620,6 @@
     position: relative;
     left: 22px;
     top: 10px;
-    font-size: 52px;
     color: #8b8b8b;
   }
   .banner-gradient .technologies-wrap {
@@ -555,14 +637,10 @@
     color: white;
   }
   .banner-gradient .technologies-wrap h3 {
-    font-size: 34px;
-    width: 800px;
     margin-bottom: 14px;
   }
   .banner-gradient .technologies-wrap .technologies {
     left: 22px;
-    font-size: 24px;
-    width: 600px;
   }
 }
 
@@ -969,11 +1047,102 @@
   fill: #041a02;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1600px) {
+  .contact-gradient .headline {
+    top: 0px;
+    font-size: 110px;
+  }
+  .contact-gradient .contact-content {
+    top: 19%;
+    height: 72%;
+  }
+  .contact-gradient .contact-content .text-contact {
+    font-size: 26px;
+    width: 600px;
+  }
+  .contact-gradient .contact-content .form-wrap {
+    position: relative;
+    width: 640px;
+    height: 260px;
+  }
+  .contact-gradient .contact-content .form-wrap form {
+    height: 260px;
+    width: 360px;
+  }
+  .contact-gradient .contact-content .form-wrap form #mail {
+    font-size: 18px;
+    height: 30px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+  .contact-gradient .contact-content .form-wrap form #thx {
+    top: 86px;
+    height: 160px;
+    padding: 0 46px;
+    padding-bottom: 8px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 18px;
+  }
+  .contact-gradient .contact-content .form-wrap form #message {
+    height: 120px;
+    padding: 12px 16px;
+    font-size: 18px;
+    border-radius: 16px;
+  }
+  .contact-gradient .contact-content .form-wrap form #submit {
+    font-size: 18px;
+    border: 0;
+    height: 36px;
+    width: 140px;
+    padding-top: 1px;
+    border-radius: 20px;
+  }
+  .contact-gradient #btn {
+    line-height: 54px;
+    font-size: 24px;
+  }
+  .contact-gradient #btn.prjects {
+    left: 420px;
+    white-space: nowrap;
+  }
+  .contact-gradient #btn svg {
+    position: absolute;
+    top: 24px;
+    fill: white;
+    right: 24px;
+    margin-right: 10px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .contact-gradient #btn .doubleArrowUp-top {
+    top: 16px;
+  }
+  .contact-gradient #btn .doubleArrowUp-bot {
+    top: 30px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contact-gradient .contact-content .socials {
+    width: 400px;
+  }
+  .contact-gradient .contact-content .socials .link-socials {
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 4px 12px;
+    padding-bottom: 6px;
+  }
+  .contact-gradient .contact-content .socials .link-socials:hover {
+    background-color: #d81650;
+  }
+}
+
+@media (max-width: 1200px) {
   .contact-gradient .contact-content .socials {
     top: 55px;
     position: relative;
-    left: 100px;
+    left: 122px;
     -webkit-transform: translate(0, -100%);
             transform: translate(0, -100%);
   }
@@ -981,7 +1150,6 @@
 
 @media (max-width: 890px) {
   .contact-gradient .contact-content .text-contact {
-    margin-left: 48px;
     width: 640px;
   }
 }

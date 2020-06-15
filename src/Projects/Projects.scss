@@ -254,10 +254,46 @@
   }
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1600px) {
   .project-gradient {
+    .headline {
+      top: 0px;
+      font-size: 110px;
+    }
     .projects {
-      width: 94%;
+      padding-top: 64px;
+      width: 80%;
+    }
+    #btn {
+      line-height: 54px;
+      font-size: 24px;
+      &.contact {
+        left: 420px;
+        white-space: nowrap;
+      }
+      svg {
+        position: absolute;
+        top: 24px;
+        fill: white;
+        right: 24px;
+        margin-right: 10px;
+      }
+      .arrow-up {
+        transform: rotate(180deg);
+        top: 24px;
+      }
+    }
+    .projects {
+      font-size: 20px;
+      .projectCard {
+        .desc {
+          top: 10%;
+          width: 84%;
+        }
+        .btnwrap {
+          top: 70%;
+        }
+      }
     }
   }
 }
@@ -265,6 +301,7 @@
 @media (max-width: 1250px) {
   .project-gradient {
     .projects {
+      width: 90%;
       grid-gap: 15px;
       grid-template-columns: repeat(6, 42%);
       grid-template-rows: 1fr;
