@@ -303,15 +303,6 @@
     padding: 16px;
     border-radius: 16px;
   }
-  .contact-gradient .contact-content .form-wrap form #thx {
-    top: 86px;
-    height: 160px;
-    padding: 0 46px;
-    padding-bottom: 8px;
-    text-align: center;
-    font-size: 40px;
-    border-radius: 18px;
-  }
   .contact-gradient .contact-content .form-wrap form #message {
     height: 120px;
     padding: 12px 16px;
@@ -325,6 +316,28 @@
     width: 140px;
     padding-top: 1px;
     border-radius: 20px;
+  }
+  .contact-gradient .contact-content .form-wrap form #thx {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 68px;
+    z-index: 1;
+    width: 100%;
+    height: 120px;
+    padding: 0 46px;
+    padding-bottom: 8px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: rgba(255, 0, 76, 0.493);
+    color: white;
+    border-radius: 18px;
+    opacity: 0;
   }
   .contact-gradient #btn {
     line-height: 54px;

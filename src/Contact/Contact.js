@@ -1,6 +1,6 @@
 import React from "react";
 
-import pdf from "./a.pdf";
+import pdf from "./CV-RichardHanak.pdf";
 import useFormValidation from "./useFormValidation";
 import validateFormWarning from "./validateFormWarning";
 
@@ -24,8 +24,8 @@ const Contact = ({ setScrollToPage, language }) => {
       <div className="contact-content">
       <p className="text-contact">
         {language === "EN"
-          ? "If you have any questions feel free to contact me. I usually respond withing 24 hours."
-          : "Na všetky otázky Vám rád odpoviem. Zvyčajne do 24-och hodín."}
+          ? "If you have any questions feel free to contact me. I usually respond within 24 hours."
+          : "Na všetky otázky Vám rád odpoviem. Zvyčajne do 24 hodín."}
       </p>
       <div className="socials">
 
