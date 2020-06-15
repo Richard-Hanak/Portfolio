@@ -36,7 +36,7 @@ function Tgame() {
   const livesRef = useRef(lives);
   livesRef.current = lives;
 
-  /*useEffect(() => {
+  useEffect(() => {
     const callBackendAPI = async () => {
       const response = await fetch("/express_backend");
       const body = await response.json();
@@ -47,7 +47,7 @@ function Tgame() {
       return body;
     };
     callBackendAPI();
-  }, []);*/
+  }, []);
 
   const gameLoop = () => {
     let timer;
