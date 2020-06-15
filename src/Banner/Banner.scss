@@ -82,7 +82,7 @@
       background-image: url(./Banner/iconfinder_Slovakia_92337.png);
       background-size: cover;
       overflow: hidden;
-      }
+    }
     #EN {
       height: 40px;
       width: 46px;
@@ -114,37 +114,32 @@
     color: rgb(255, 255, 255);
   }
 
-  h3 {
-    position: absolute;
-    top: 55%;
-    left: 48px;
-    font-size: 48px;
-    width: 800px;
-    letter-spacing: 1px;
-    color: rgb(255, 255, 255);
-  }
-
-  .sub {
-    position: relative;
-    top: 290px;
-    font-size: 56px;
-    color: rgb(139, 139, 139);
-  }
+  .sub,
   .subSK {
     position: relative;
     top: 310px;
+    left: 48px;
     font-size: 56px;
     color: rgb(139, 139, 139);
   }
 
-  .technologies {
+  .technologies-wrap {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 64%;
+    top: 55%;
     left: 48px;
-    font-size: 30px;
-    width: 600px;
     letter-spacing: 1px;
     color: rgb(255, 255, 255);
+    h3 {
+      font-size: 48px;
+      width: 800px;
+      margin-bottom: 14px;
+    }
+    .technologies {
+      font-size: 30px;
+      width: 600px;
+    }
   }
 
   #btn {
@@ -157,8 +152,8 @@
     font-size: 34px;
     letter-spacing: 1px;
     color: rgb(255, 255, 255);
-    padding-left:34px;
-    padding-right:64px;
+    padding-left: 34px;
+    padding-right: 64px;
     border: solid 2px white;
     border-bottom: none;
     z-index: 100;
@@ -189,5 +184,191 @@
       svg {
         fill: rgb(18, 8, 53);
       }
-    }}
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .banner-gradient {
+    .ahoj {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      font-size: 120px;
+      width: 1020px;
+      line-height: 140px;
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+@media (max-width: 930px) {
+  .banner-gradient {
+    .ahoj,
+    .hi {
+      position: relative;
+      top: 10px;
+      left: 20px;
+      width: auto;
+      font-size: 90px;
+      line-height: 90px;
+      color: rgb(255, 255, 255);
+    }
+    .sub,
+    .subSK {
+      position: relative;
+      left: 22px;
+      top: 10px;
+      font-size: 52px;
+      color: rgb(139, 139, 139);
+    }
+    .technologies-wrap {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 55%;
+      left: 20px;
+      letter-spacing: 1px;
+      color: rgb(255, 255, 255);
+      h3 {
+        font-size: 34px;
+        width: 800px;
+        margin-bottom: 14px;
+      }
+      .technologies {
+        left: 22px;
+        font-size: 24px;
+        width: 600px;
+      }
+    }
+  }
+}
+@media (max-width: 830px) {
+  .banner-gradient {
+    #btn {
+      left: 20px;
+      &.contact {
+        left: calc(100% - 20px);
+        transform: translate(-100%, -100%);
+        white-space: nowrap;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .banner-gradient {
+    .technologies-wrap {
+      h3 {
+        width: auto;
+      }
+      .technologies {
+        width: auto;
+      }
+    }
+    #btn {
+      font-size: 20px;
+      &.contact {
+        left: calc(100% - 20px);
+        transform: translate(-100%, -100%);
+        white-space: nowrap;
+      }
+    }
+  }
+}
+@media (max-width: 460px) {
+  .banner-gradient {
+    .ahoj,
+    .hi {
+      position: relative;
+      top: 10px;
+      left: 20px;
+      width: auto;
+      font-size: 66px;
+      line-height: 70px;
+      color: rgb(255, 255, 255);
+    }
+    .sub,
+    .subSK {
+      position: relative;
+      left: 22px;
+      top: 8px;
+      font-size: 38px;
+      color: rgb(139, 139, 139);
+    }
+
+    .technologies-wrap {
+      top: 50%;
+      h3 {
+        left: 20px;
+        width: auto;
+        font-size: 32px;
+      }
+      .technologies {
+        left: 22px;
+        font-size: 22px;
+        width: auto;
+      }
+    }
+
+    #btn {
+      font-size: 20px;
+      padding-left: 34px;
+      padding-right: 34px;
+      line-height: 40px;
+      &.contact {
+        left: calc(100% - 20px);
+        transform: translate(-100%, -100%);
+        white-space: nowrap;
+      }
+      svg {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  .banner-gradient {
+    .ahoj,
+    .hi {
+      position: relative;
+      top: 10px;
+      left: 20px;
+      width: 300px;
+      font-size: 58px;
+      line-height: 60px;
+      color: rgb(255, 255, 255);
+    }
+    .sub,
+    .subSK {
+      position: relative;
+      left: 22px;
+      top: 4px;
+      font-size: 32px;
+      color: rgb(139, 139, 139);
+    }
+    .technologies-wrap {
+      top: 50%;
+      h3 {
+        left: 20px;
+        width: auto;
+        font-size: 28px;
+        line-height: 28px;
+      }
+      .technologies {
+        left: 22px;
+        font-size: 18px;
+        width: auto;
+      }
+    }
+    #btn {
+      font-size: 18px;
+      padding-left: 18px;
+      padding-right: 18px;
+      line-height: 38px;
+      &.contact {
+        left: calc(100% - 20px);
+        transform: translate(-100%, -100%);
+        white-space: nowrap;
+      }
+    }
+  }
 }

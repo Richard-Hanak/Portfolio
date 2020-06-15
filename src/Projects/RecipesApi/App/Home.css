@@ -481,7 +481,7 @@
     margin-top: 60px;
   }
   .wrapper .ingredients {
-    top: calc(250vh + 700px);
+    top: calc(50vh + 700px);
     left: 0%;
     width: 100%;
     padding: 20px;
@@ -520,7 +520,7 @@
     margin: 10px auto;
   }
   .wrapper .ingredients {
-    top: calc(250vh + 610px);
+    top: calc(50vh + 610px);
     padding: 10px;
     -ms-grid-columns: (minmax(130px, 140px))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(130px, 140px));

@@ -8,7 +8,8 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
         <div className="projectCard">
           <div className="image" id="game"></div>
           <p className="desc">{language === "EN" ? "Co-ordination testing game. The highscore database is being kept by node server." : "Hra, ktorá otestuje vašu koordináciu. highscore databáza je udržiavaná na node serveri."}
-            <p className="highlight">ReactJS {"&"} NodeJS.</p>
+          <br></br>
+            <span className="highlight">ReactJS {"&"} NodeJS.</span>
           </p>
           <div className="btnwrap">
             <a
@@ -34,9 +35,10 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
           <div className="image" id="recipes"></div>
           <p className="desc">
           {language === "EN" ? "Single page cookbook using api to dynamically display results." : "Single page receptár, ktorý používa api a dynamicky zobrazuje výsledky."} 
-            <p className="highlight">
+          <br></br>
+            <span className="highlight">
               ReactJS: hooks, router {"&"} contextApi.
-            </p>
+            </span>
           </p>
           <div className="btnwrap">
             <a
@@ -62,17 +64,19 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
           <div className="image" id="soon"></div>
           <p className="desc">
             COMING SOON...
-            <p className="highlight"></p>
+            <br></br>
+            <span className="highlight"></span>
           </p>
         </div>
         <div className="projectCard">
           <div className="image" id="portfolio"></div>
           <p className="desc">
           {language === "EN" ? "Page transitions using react libraries. Custom hook form validation." : "Prechody stránok používajú react knižnice. Validácia formulára pomocou custom hookov."}
-            <p className="highlight">
+          <br></br>
+            <span className="highlight">
               {" "}
               ReactJS {"&"} NodeJS.
-            </p>
+            </span>
           </p>
           <div className="btnwrap">
             <a
@@ -90,7 +94,8 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
           <p className="desc">
           {language === "EN" ? "App I developed for customer that creates pirnt-ready shipping labels from Excel" : "Aplikácia, ktorú som vytvoril pre klienta. Z Excelu vyrába prepravné štítky pripravené na tlač."}
 
-            <p className="highlight"> VanillaJS, Jquery {"&"} NodeJS.</p>
+          <br></br>
+            <span className="highlight"> VanillaJS, Jquery {"&"} NodeJS.</span>
           </p>
           <div className="btnwrap">
             <a
@@ -116,7 +121,8 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
           <div className="image" id="soon"></div>
           <p className="desc">
             COMING SOON...
-            <p className="highlight"></p>
+            <br></br>
+            <span className="highlight"></span>
           </p>
         </div>
       </div>

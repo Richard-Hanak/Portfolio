@@ -14,10 +14,11 @@ const Banner = ({ setScrollToPage, setLanguage, language }) => {
         <div id="SK" className={language === "SK" ? "language-toggled" : null} onClick={() => setLanguage("SK")}></div>
       </div>
       <h3 className={language === "EN" ? "sub" : "subSK"}>{language === "EN" ? "a Web Developer." : "Webový Developer."}</h3>
+      <div className="technologies-wrap">
       <h3>{language === "EN" ? "Technologies I use" : "Technológie, ktoré používam"}</h3>
       <p className="technologies">
         Html5, Css3, Scss, JavaScript, ReactJS, NodeJS, Express, GitHub, Adobe XD.
-      </p>
+      </p></div>
       <p
         id="btn"
         className="contact"

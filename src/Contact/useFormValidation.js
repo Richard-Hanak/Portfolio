@@ -38,6 +38,7 @@ function useFormValidation(initialState, validate) {
         setSubmitting(false);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [errors]);
 
   function handleChange(event) {

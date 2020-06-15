@@ -21,6 +21,39 @@ const Contact = ({ setScrollToPage, language }) => {
   return (
     <div className="contact-gradient">
       <h1 className="headline">{language === "EN" ? "Contact" : "Kontakt"}</h1>
+      <div className="contact-content">
+      <p className="text-contact">
+        {language === "EN"
+          ? "If you have any questions feel free to contact me. I usually respond withing 24 hours."
+          : "Na všetky otázky Vám rád odpoviem. Zvyčajne do 24-och hodín."}
+      </p>
+      <div className="socials">
+
+          <a
+            href="https://github.com/Richard-Hanak"
+            className="link-socials"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href={pdf}
+            className="link-socials"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {language === "EN" ? "Resume" : "Životopis" }
+          </a>
+          <a
+            href="https://www.linkedin.com/in/richard-hanak-212a491ab/"
+            className="link-socials"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
       <div className="form-wrap">
         <form className=".contact" onSubmit={handleSubmit}>
           <div className="mail-wrap">
@@ -47,7 +80,11 @@ const Contact = ({ setScrollToPage, language }) => {
             className={errors.message && "error-input"}
             autoComplete="off"
           ></textarea>
-          <div id="thx">{language === "EN" ? "Thank you for getting in touch." : "Ďakujem že ste ma kontaktovali."}</div>
+          <div id="thx">
+            {language === "EN"
+              ? "Thank you for getting in touch."
+              : "Ďakujem že ste ma kontaktovali."}
+          </div>
           {errors.message && <p className="error-text">{errors.message}</p>}
 
           <input
@@ -57,34 +94,9 @@ const Contact = ({ setScrollToPage, language }) => {
             value={language === "EN" ? "SEND" : "POSLAŤ"}
           />
         </form>
-      </div>
-      <div className="wrap-contact-text">
-        <p className="text-contact">
-        {language === "EN" ? "Send me a message and I will get back to you within 24 hours or check my  " : "Pošlite mi správu a zvyčajne sa ozvem do 24 hodín alebo si pozrite moje  "}
-          <a href={pdf} className="link-contact" target="_blank" rel="noopener noreferrer">
-            <b>CV</b>
-          </a>
-          .
-        </p>
-        <div className="socials">
-          <a
-            href="https://github.com/Richard-Hanak"
-            className="link-contact"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/richard-hanak-212a491ab/"
-            className="link-contact"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
         </div>
-      </div>
+        </div>
+  
       <p
         id="btn"
         className="prjects"

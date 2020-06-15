@@ -6,8 +6,8 @@ const LabelCreator = () => {
     <div id="labelCreatorWrap">
       <div className="IframeWrapper">
         <iframe
-          width="1024"
-          height="576"
+          width="100%"
+          height="100%"
           src="https://www.youtube.com/embed/x-4nYHFPaX8"
           frameborder="0"
           title="Label Creator"

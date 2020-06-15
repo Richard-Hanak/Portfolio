@@ -6,6 +6,8 @@
 }
 
 #labelCreatorWrap .IframeWrapper {
+  height: 36.6vw;
+  width: 65vw;
   position: absolute;
   left: 50%;
   top: 50%;

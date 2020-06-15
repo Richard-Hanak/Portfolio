@@ -4,7 +4,7 @@ import { SearchContext, LoadingContext } from "../Context";
 
 const SearchIngredient = ({ setShowRecipeResults }) => {
   const setSearch = useContext(SearchContext)[1];
-  const [loading, setLoading] = useContext(LoadingContext);
+  const setLoading = useContext(LoadingContext)[1];
 
   const handleSubmit = (e) => {
     setShowRecipeResults(true);

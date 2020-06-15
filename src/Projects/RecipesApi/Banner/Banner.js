@@ -7,7 +7,7 @@ import {
 } from "../Context";
 
 const Banner = ({setShowRecipeResults}) => {
-  const [loading, setLoading] = useContext(LoadingContext);
+  const setLoading = useContext(LoadingContext)[1];
   const [search, setSearch] = useContext(SearchContext);
   const [alcoholFree, setAlcoholFree] = useContext(AlcoholFreeContext);
 

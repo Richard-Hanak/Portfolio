@@ -1,53 +1,68 @@
 .contact-gradient {
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(225deg, rgba(53, 53, 53, 0.04) 0%, rgba(53, 53, 53, 0.04) 25%, rgba(189, 189, 189, 0.04) 25%, rgba(189, 189, 189, 0.04) 50%, rgba(106, 106, 106, 0.04) 50%, rgba(106, 106, 106, 0.04) 75%, rgba(11, 11, 11, 0.04) 75%, rgba(11, 11, 11, 0.04) 100%), linear-gradient(250deg, rgba(77, 77, 77, 0.04) 0%, rgba(77, 77, 77, 0.04) 25%, rgba(113, 113, 113, 0.04) 25%, rgba(113, 113, 113, 0.04) 50%, rgba(23, 23, 23, 0.04) 50%, rgba(23, 23, 23, 0.04) 75%, rgba(182, 182, 182, 0.04) 75%, rgba(182, 182, 182, 0.04) 100%), linear-gradient(209deg, rgba(169, 169, 169, 0.04) 0%, rgba(169, 169, 169, 0.04) 25%, rgba(164, 164, 164, 0.04) 25%, rgba(164, 164, 164, 0.04) 50%, rgba(32, 32, 32, 0.04) 50%, rgba(32, 32, 32, 0.04) 75%, rgba(34, 34, 34, 0.04) 75%, rgba(34, 34, 34, 0.04) 100%), linear-gradient(233deg, rgba(113, 113, 113, 0.04) 0%, rgba(113, 113, 113, 0.04) 25%, rgba(177, 177, 177, 0.04) 25%, rgba(177, 177, 177, 0.04) 50%, rgba(188, 188, 188, 0.04) 50%, rgba(188, 188, 188, 0.04) 75%, rgba(84, 84, 84, 0.04) 75%, rgba(84, 84, 84, 0.04) 100%), linear-gradient(210deg, rgba(57, 57, 57, 0.04) 0%, rgba(57, 57, 57, 0.04) 25%, rgba(227, 227, 227, 0.04) 25%, rgba(227, 227, 227, 0.04) 50%, rgba(14, 14, 14, 0.04) 50%, rgba(14, 14, 14, 0.04) 75%, rgba(26, 26, 26, 0.04) 75%, rgba(26, 26, 26, 0.04) 100%), linear-gradient(90deg, #134e0b, rgba(8, 231, 138, 0.24));
+  background-image: linear-gradient(225deg, rgba(53, 53, 53, 0.04) 0%, rgba(53, 53, 53, 0.04) 25%, rgba(189, 189, 189, 0.04) 25%, rgba(189, 189, 189, 0.04) 50%, rgba(106, 106, 106, 0.04) 50%, rgba(106, 106, 106, 0.04) 75%, rgba(11, 11, 11, 0.04) 75%, rgba(11, 11, 11, 0.04) 100%), linear-gradient(250deg, rgba(77, 77, 77, 0.04) 0%, rgba(77, 77, 77, 0.04) 25%, rgba(113, 113, 113, 0.04) 25%, rgba(113, 113, 113, 0.04) 50%, rgba(23, 23, 23, 0.04) 50%, rgba(23, 23, 23, 0.04) 75%, rgba(182, 182, 182, 0.04) 75%, rgba(182, 182, 182, 0.04) 100%), linear-gradient(209deg, rgba(169, 169, 169, 0.04) 0%, rgba(169, 169, 169, 0.04) 25%, rgba(164, 164, 164, 0.04) 25%, rgba(164, 164, 164, 0.04) 50%, rgba(32, 32, 32, 0.04) 50%, rgba(32, 32, 32, 0.04) 75%, rgba(34, 34, 34, 0.04) 75%, rgba(34, 34, 34, 0.04) 100%), linear-gradient(233deg, rgba(113, 113, 113, 0.04) 0%, rgba(113, 113, 113, 0.04) 25%, rgba(177, 177, 177, 0.04) 25%, rgba(177, 177, 177, 0.04) 50%, rgba(188, 188, 188, 0.04) 50%, rgba(188, 188, 188, 0.04) 75%, rgba(84, 84, 84, 0.04) 75%, rgba(84, 84, 84, 0.04) 100%), linear-gradient(210deg, rgba(57, 57, 57, 0.04) 0%, rgba(57, 57, 57, 0.04) 25%, rgba(227, 227, 227, 0.04) 25%, rgba(227, 227, 227, 0.04) 50%, rgba(14, 14, 14, 0.04) 50%, rgba(14, 14, 14, 0.04) 75%, rgba(26, 26, 26, 0.04) 75%, rgba(26, 26, 26, 0.04) 100%), linear-gradient(90deg, #134e0b, rgba(18, 129, 83, 0.295));
 }
 
-.contact-gradient .wrap-contact-text {
+.contact-gradient .contact-content {
   position: absolute;
-  top: 44%;
-  left: 44px;
-  height: 200px;
-  width: 744px;
+  top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 66%;
 }
 
-.contact-gradient .wrap-contact-text .text-contact {
-  font-size: 40px;
+.contact-gradient .contact-content .text-contact {
+  margin-left: 48px;
+  width: 800px;
+  font-size: 36px;
   letter-spacing: 1px;
   color: white;
 }
 
-.contact-gradient .wrap-contact-text .link-contact {
-  color: #c73762;
-  text-decoration: none;
-  font-size: 40px;
-}
-
-.contact-gradient .wrap-contact-text .link-contact:hover {
-  text-decoration: underline;
-}
-
-.contact-gradient .wrap-contact-text .socials {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.contact-gradient .contact-content .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.contact-gradient .form-wrap {
   position: absolute;
-  right: 0;
-  width: calc(100vw - 784px);
-  height: 100%;
+  width: 550px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 90vw;
+  font-family: "barlow-r";
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
 }
 
-.contact-gradient .form-wrap form {
+.contact-gradient .contact-content .socials .link-socials {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+  background-color: rgba(216, 22, 80, 0.767);
+  border-radius: 14px;
+  padding: 6px 16px;
+  padding-bottom: 8px;
+}
+
+.contact-gradient .contact-content .socials .link-socials:hover {
+  background-color: #d81650;
+}
+
+.contact-gradient .contact-content .form-wrap {
+  position: relative;
+  width: 720px;
+  height: 340px;
+}
+
+.contact-gradient .contact-content .form-wrap form {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,7 +82,7 @@
   width: 400px;
 }
 
-.contact-gradient .form-wrap form #mail {
+.contact-gradient .contact-content .form-wrap form #mail {
   position: relative;
   font-family: "Barlow-r";
   font-size: 20px;
@@ -80,13 +95,13 @@
           box-shadow: 0 0 10px 2px rgba(48, 48, 48, 0.404);
 }
 
-.contact-gradient .form-wrap form #mail:focus {
+.contact-gradient .contact-content .form-wrap form #mail:focus {
   outline: none;
   -webkit-box-shadow: 0 0 10px 5px rgba(191, 206, 214, 0.658);
           box-shadow: 0 0 10px 5px rgba(191, 206, 214, 0.658);
 }
 
-.contact-gradient .form-wrap form #thx {
+.contact-gradient .contact-content .form-wrap form #thx {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,13 +124,13 @@
   opacity: 0;
 }
 
-.contact-gradient .form-wrap form .transition-thx {
+.contact-gradient .contact-content .form-wrap form .transition-thx {
   opacity: 1 !important;
   -webkit-transition: opacity 250ms;
   transition: opacity 250ms;
 }
 
-.contact-gradient .form-wrap form #message {
+.contact-gradient .contact-content .form-wrap form #message {
   opacity: 1;
   width: 100%;
   height: 160px;
@@ -130,29 +145,29 @@
   z-index: 2;
 }
 
-.contact-gradient .form-wrap form #message:focus {
+.contact-gradient .contact-content .form-wrap form #message:focus {
   outline: none;
   -webkit-box-shadow: 0 0 10px 5px rgba(191, 206, 214, 0.658);
           box-shadow: 0 0 10px 5px rgba(191, 206, 214, 0.658);
 }
 
-.contact-gradient .form-wrap form .transition-message {
+.contact-gradient .contact-content .form-wrap form .transition-message {
   opacity: 0 !important;
   -webkit-transition: opacity 250ms;
   transition: opacity 250ms;
 }
 
-.contact-gradient .form-wrap form #mail.error-input {
+.contact-gradient .contact-content .form-wrap form #mail.error-input {
   -webkit-box-shadow: 0 0 10px 5px rgba(218, 45, 45, 0.616);
           box-shadow: 0 0 10px 5px rgba(218, 45, 45, 0.616);
 }
 
-.contact-gradient .form-wrap form #message.error-input {
+.contact-gradient .contact-content .form-wrap form #message.error-input {
   -webkit-box-shadow: 0 0 10px 5px rgba(218, 45, 45, 0.616);
           box-shadow: 0 0 10px 5px rgba(218, 45, 45, 0.616);
 }
 
-.contact-gradient .form-wrap form .error-text {
+.contact-gradient .contact-content .form-wrap form .error-text {
   position: relative;
   top: -8px;
   padding-left: 20px;
@@ -160,7 +175,7 @@
   font-family: "Barlow-r";
 }
 
-.contact-gradient .form-wrap form #submit {
+.contact-gradient .contact-content .form-wrap form #submit {
   position: relative;
   bottom: 0;
   margin: 0 auto;
@@ -168,7 +183,7 @@
   border: 0;
   height: 46px;
   width: 160px;
-  background-color: #c73762;
+  background-color: rgba(216, 22, 80, 0.767);
   -webkit-box-shadow: 0 0 10px 2px rgba(48, 48, 48, 0.404);
           box-shadow: 0 0 10px 2px rgba(48, 48, 48, 0.404);
   color: white;
@@ -177,16 +192,16 @@
   cursor: pointer;
 }
 
-.contact-gradient .form-wrap form #submit:hover {
-  background-color: #d8255b;
+.contact-gradient .contact-content .form-wrap form #submit:hover {
+  background-color: #d81650;
 }
 
-.contact-gradient .form-wrap form #submit:focus {
+.contact-gradient .contact-content .form-wrap form #submit:focus {
   outline: none;
   background-color: #d8255b;
 }
 
-.contact-gradient .form-wrap form .transition-mail {
+.contact-gradient .contact-content .form-wrap form .transition-mail {
   -webkit-transform: translate(0, 300%);
           transform: translate(0, 300%);
   -webkit-transition: opacity 200ms, -webkit-transform ease-out 400ms;
@@ -197,7 +212,7 @@
   opacity: 0;
 }
 
-.contact-gradient .form-wrap form .transition-sendButton {
+.contact-gradient .contact-content .form-wrap form .transition-sendButton {
   -webkit-transform: translate(0, -300%);
           transform: translate(0, -300%);
   -webkit-transition: opacity 200ms, -webkit-transform ease-out 400ms;
@@ -258,5 +273,156 @@
 
 .contact-gradient #btn:hover svg {
   fill: #041a02;
+}
+
+@media (max-width: 1450px) {
+  .contact-gradient .contact-content .socials {
+    top: 55px;
+    position: relative;
+    left: 100px;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+}
+
+@media (max-width: 890px) {
+  .contact-gradient .contact-content .text-contact {
+    margin-left: 48px;
+    width: 640px;
+  }
+}
+
+@media (max-width: 830px) {
+  .contact-gradient .headline {
+    left: 20px;
+  }
+  .contact-gradient .contact-content .text-contact {
+    margin-left: 20px;
+    width: 640px;
+  }
+  .contact-gradient #btn {
+    left: 20px;
+  }
+  .contact-gradient #btn.prjects {
+    left: calc(100% - 20px);
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 745px) {
+  .contact-gradient .contact-content {
+    width: 100vw;
+  }
+  .contact-gradient .contact-content .text-contact {
+    width: auto;
+  }
+  .contact-gradient .contact-content .socials {
+    width: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+  }
+  .contact-gradient .contact-content .form-wrap {
+    width: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media (max-width: 670px) {
+  .project-gradient .projects {
+    -ms-grid-columns: (82%)[6];
+        grid-template-columns: repeat(6, 82%);
+  }
+  .project-gradient .projects .projectCard {
+    left: 248%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-gradient #btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .contact-gradient .headline {
+    top: -4px;
+    font-size: 100px;
+  }
+  .contact-gradient .contact-content {
+    top: 100px;
+    height: 80%;
+  }
+  .contact-gradient .contact-content .text-contact {
+    font-size: 24px;
+  }
+  .contact-gradient .contact-content .socials .link-socials {
+    font-size: 16px;
+  }
+  .contact-gradient #btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .contact-gradient #btn {
+    font-size: 20px;
+    padding-left: 34px;
+    padding-right: 34px;
+    line-height: 40px;
+  }
+  .contact-gradient #btn.projects {
+    left: calc(100% - 20px);
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+    white-space: nowrap;
+  }
+  .contact-gradient #btn svg {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-gradient .headline {
+    top: -20px;
+    font-size: 80px;
+  }
+  .contact-gradient .contact-content .socials {
+    width: 90%;
+  }
+  .contact-gradient .contact-content .text-contact {
+    top: 60px;
+    font-size: 24px;
+  }
+  .contact-gradient .contact-content .form-wrap form {
+    width: 90%;
+    height: 220px;
+  }
+  .contact-gradient .contact-content .form-wrap form #mail {
+    height: 20px;
+    font-size: 16px;
+  }
+  .contact-gradient .contact-content .form-wrap form #message {
+    height: 100px;
+    font-size: 16px;
+  }
+  .contact-gradient .contact-content .form-wrap form #submit {
+    height: 36px;
+    width: 100px;
+    font-size: 16px;
+  }
+  .contact-gradient .contact-content .form-wrap form #thx {
+    font-size: 24px;
+  }
+  .contact-gradient #btn {
+    font-size: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    line-height: 38px;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */

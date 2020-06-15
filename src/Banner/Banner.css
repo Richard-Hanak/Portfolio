@@ -58,38 +58,39 @@
   color: white;
 }
 
-.banner-gradient h3 {
-  position: absolute;
-  top: 55%;
-  left: 48px;
-  font-size: 48px;
-  width: 800px;
-  letter-spacing: 1px;
-  color: white;
-}
-
-.banner-gradient .sub {
-  position: relative;
-  top: 290px;
-  font-size: 56px;
-  color: #8b8b8b;
-}
-
+.banner-gradient .sub,
 .banner-gradient .subSK {
   position: relative;
   top: 310px;
+  left: 48px;
   font-size: 56px;
   color: #8b8b8b;
 }
 
-.banner-gradient .technologies {
+.banner-gradient .technologies-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
-  top: 64%;
+  top: 55%;
   left: 48px;
-  font-size: 30px;
-  width: 600px;
   letter-spacing: 1px;
   color: white;
+}
+
+.banner-gradient .technologies-wrap h3 {
+  font-size: 48px;
+  width: 800px;
+  margin-bottom: 14px;
+}
+
+.banner-gradient .technologies-wrap .technologies {
+  font-size: 30px;
+  width: 600px;
 }
 
 .banner-gradient #btn {
@@ -142,5 +143,188 @@
 
 .banner-gradient #btn:hover svg {
   fill: #120835;
+}
+
+@media (max-width: 1090px) {
+  .banner-gradient .ahoj {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 120px;
+    width: 1020px;
+    line-height: 140px;
+    color: white;
+  }
+}
+
+@media (max-width: 930px) {
+  .banner-gradient .ahoj,
+  .banner-gradient .hi {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    width: auto;
+    font-size: 90px;
+    line-height: 90px;
+    color: white;
+  }
+  .banner-gradient .sub,
+  .banner-gradient .subSK {
+    position: relative;
+    left: 22px;
+    top: 10px;
+    font-size: 52px;
+    color: #8b8b8b;
+  }
+  .banner-gradient .technologies-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 55%;
+    left: 20px;
+    letter-spacing: 1px;
+    color: white;
+  }
+  .banner-gradient .technologies-wrap h3 {
+    font-size: 34px;
+    width: 800px;
+    margin-bottom: 14px;
+  }
+  .banner-gradient .technologies-wrap .technologies {
+    left: 22px;
+    font-size: 24px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 830px) {
+  .banner-gradient #btn {
+    left: 20px;
+  }
+  .banner-gradient #btn.contact {
+    left: calc(100% - 20px);
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-gradient .technologies-wrap h3 {
+    width: auto;
+  }
+  .banner-gradient .technologies-wrap .technologies {
+    width: auto;
+  }
+  .banner-gradient #btn {
+    font-size: 20px;
+  }
+  .banner-gradient #btn.contact {
+    left: calc(100% - 20px);
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 460px) {
+  .banner-gradient .ahoj,
+  .banner-gradient .hi {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    width: auto;
+    font-size: 66px;
+    line-height: 70px;
+    color: white;
+  }
+  .banner-gradient .sub,
+  .banner-gradient .subSK {
+    position: relative;
+    left: 22px;
+    top: 8px;
+    font-size: 38px;
+    color: #8b8b8b;
+  }
+  .banner-gradient .technologies-wrap {
+    top: 50%;
+  }
+  .banner-gradient .technologies-wrap h3 {
+    left: 20px;
+    width: auto;
+    font-size: 32px;
+  }
+  .banner-gradient .technologies-wrap .technologies {
+    left: 22px;
+    font-size: 22px;
+    width: auto;
+  }
+  .banner-gradient #btn {
+    font-size: 20px;
+    padding-left: 34px;
+    padding-right: 34px;
+    line-height: 40px;
+  }
+  .banner-gradient #btn.contact {
+    left: calc(100% - 20px);
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+    white-space: nowrap;
+  }
+  .banner-gradient #btn svg {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .banner-gradient .ahoj,
+  .banner-gradient .hi {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    width: 300px;
+    font-size: 58px;
+    line-height: 60px;
+    color: white;
+  }
+  .banner-gradient .sub,
+  .banner-gradient .subSK {
+    position: relative;
+    left: 22px;
+    top: 4px;
+    font-size: 32px;
+    color: #8b8b8b;
+  }
+  .banner-gradient .technologies-wrap {
+    top: 50%;
+  }
+  .banner-gradient .technologies-wrap h3 {
+    left: 20px;
+    width: auto;
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .banner-gradient .technologies-wrap .technologies {
+    left: 22px;
+    font-size: 18px;
+    width: auto;
+  }
+  .banner-gradient #btn {
+    font-size: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    line-height: 38px;
+  }
+  .banner-gradient #btn.contact {
+    left: calc(100% - 20px);
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+    white-space: nowrap;
+  }
 }
 /*# sourceMappingURL=Banner.css.map */

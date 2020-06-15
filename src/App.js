@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { FullPage, Slide } from "react-full-page";
-import { disableBodyScroll } from "body-scroll-lock";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 import Banner from "./Banner/Banner.js";
 import Projects from "./Projects/Projects.js";
@@ -24,13 +24,14 @@ function App() {
   const fullPageRef = useRef();
 
   useEffect(() => {
+    const targetElement = document.querySelector("#list");
     (() => {
       if (projectScroll === true) {
         fullPageRef.current.scrollToSlide(2);
-        const targetElement = document.querySelector("#list");
         disableBodyScroll(targetElement);
       } else {
         fullPageRef.current.scrollToSlide(1);
+        enableBodyScroll(targetElement);
       }
     })();
   }, [projectScroll]);
@@ -41,56 +42,55 @@ function App() {
   }, [scrollToPage]);
 
   return (
-    <div id="scroll-wrap">
-      <FullPage
-        ref={fullPageRef}
-        scrollMode={projectScroll ? "normal" : "full-page"}
-      >
-        <Slide>
-          <div className="background" id="slide-one">
-            <Banner setScrollToPage={setScrollToPage}
+    <FullPage
+      ref={fullPageRef}
+      scrollMode={projectScroll  ? "normal" : "full-page"}
+    >
+      <Slide>
+        <div className="background">
+          <Banner
+            setScrollToPage={setScrollToPage}
             language={language}
-            setLanguage={setLanguage} />
-          </div>
-        </Slide>
-        <Slide>
-          <div className="background" id="slide-two">
-            <Projects
+            setLanguage={setLanguage}
+          />
+        </div>
+      </Slide>
+      <Slide>
+        <div className="background">
+          <Projects
             language={language}
-              setScrollToPage={setScrollToPage}
+            setScrollToPage={setScrollToPage}
+            setRenderElement={setRenderElement}
+            setProjectScroll={setProjectScroll}
+          />
+        </div>
+      </Slide>
+      <Slide>
+        <div id="slide-three" className="background">
+          {projectScroll ? (
+            <CloseButton
               setRenderElement={setRenderElement}
               setProjectScroll={setProjectScroll}
             />
-          </div>
-        </Slide>
-        <Slide>
-          <div id="slide-three" className="background">
-            {projectScroll ? (
-              <CloseButton
-                setRenderElement={setRenderElement}
-                setProjectScroll={setProjectScroll}
-              />
-            ) : null}
-            {renderElement === "Tgame" ? (
-              <Tgame />
-            ) : renderElement === "Recipes" ? (
-              <Context>
-                {showRecipeResults ? (
-                  <SearchResults setShowRecipeResults={setShowRecipeResults} />
-                ) : (
-                  <Home setShowRecipeResults={setShowRecipeResults} />
-                )}
-              </Context>
-            ) : renderElement === "LabelCreator" ? (
-              <LabelCreator />
-            ) : (
-              <Contact setScrollToPage={setScrollToPage}
-              language={language} />
-            )}
-          </div>
-        </Slide>
-      </FullPage>
-    </div>
+          ) : null}
+          {renderElement === "Tgame" ? (
+            <Tgame />
+          ) : renderElement === "Recipes" ? (
+            <Context>
+              {showRecipeResults ? (
+                <SearchResults setShowRecipeResults={setShowRecipeResults} />
+              ) : (
+                <Home setShowRecipeResults={setShowRecipeResults} />
+              )}
+            </Context>
+          ) : renderElement === "LabelCreator" ? (
+            <LabelCreator />
+          ) : (
+            <Contact setScrollToPage={setScrollToPage} language={language} />
+          )}
+        </div>
+      </Slide>
+    </FullPage>
   );
 }
 

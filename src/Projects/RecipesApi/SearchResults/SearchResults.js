@@ -18,13 +18,15 @@ const SearchResults = ({setShowRecipeResults}) => {
   useEffect(() => {
     setLoading(true);
     setSearch(localStorage.getItem("Search"));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
+  
   useEffect(() => {
     if (loading === true) {
       fetchData();
       setSearch("");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading]);
 
   return (

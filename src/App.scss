@@ -19,49 +19,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-#scroll-wrap {
-  display: flex;
-  flex-direction: column;
+} 
+
+.background { 
+  position: absolute;
+  background-image: url("./images/BlackHero.jpg");
   overflow: hidden;
-  height: 300vh;
-
-  .background {
-    background-image: url("./images/BlackHero.jpg");
-    overflow: hidden;
-    height: 100vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Barlow-l";
-  }
-
-  .headline {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    font-size: 140px;
-    width: 800px;
-    line-height: 130px;
-    color: rgb(255, 255, 255);
-  }
-
-
-  #slide-one {
-    position: absolute;
-    width: 100%;
-  }
-
-  #slide-two {
-    position: absolute;
-    top: 100vh;
-    width: 100%;
-  }
-
-  #slide-three {
-    position: absolute;
-    height: 100vh;
-    overflow-y: auto;
-    width: 100%;
-  }
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Barlow-l";
+  width: 100%;
 }
+
+.headline {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 140px;
+  width: 800px;
+  line-height: 130px;
+  color: rgb(255, 255, 255);
+}
+
+#slide-three {
+  height: 100vh;
+  overflow-y: auto;
+} 
