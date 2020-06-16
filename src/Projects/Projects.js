@@ -7,7 +7,7 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
       <div className="projects">
         <div className="projectCard">
           <div className="image" id="game"></div>
-          <p className="desc">{language === "EN" ? "Co-ordination testing game. The highscore database is being kept by a node server." : "Hra, ktorá otestuje vašu koordináciu. highscore databáza je udržiavaná na node serveri."}
+          <p className="desc">{language === "EN" ? "Game that tests the player's coordination. The highscore table is being kept by a node server." : "Hra, ktorá otestuje vašu koordináciu. highscore databáza je udržiavaná na node serveri."}
           <br></br>
             <span className="highlight">ReactJS {"&"} NodeJS.</span>
           </p>
@@ -34,7 +34,7 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
         <div className="projectCard">
           <div className="image" id="recipes"></div>
           <p className="desc">
-          {language === "EN" ? "Single page cookbook using an api to dynamically display results." : "Single page receptár, ktorý používa api a dynamicky zobrazuje výsledky."} 
+          {language === "EN" ? "A single page cookbook that uses third-party API api to dynamically display results." : "Single page receptár, ktorý používa api a dynamicky zobrazuje výsledky."} 
           <br></br>
             <span className="highlight">
               ReactJS: hooks, router {"&"} contextApi.

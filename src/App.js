@@ -40,11 +40,11 @@ function App() {
     fullPageRef.current.scrollToSlide(scrollToPage);
     setScrollToPage();
   }, [scrollToPage]);
-
+    
   return (
     <FullPage
       ref={fullPageRef}
-      scrollMode={projectScroll  ? "normal" : "full-page"}
+      scrollMode={projectScroll || window.innerWidth <= 1250 ? "normal" : "full-page"}
     >
       <Slide>
         <div className="background">
