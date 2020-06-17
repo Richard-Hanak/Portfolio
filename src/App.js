@@ -42,6 +42,8 @@ function App() {
   }, [scrollToPage]);
     
   return (
+    <>
+    <div className="test">dassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssss</div>
     <FullPage
       ref={fullPageRef}
       scrollMode={projectScroll ? "normal" : "full-page"}
@@ -65,7 +67,7 @@ function App() {
           />
         </div>
       </Slide>
-      <div className="test">dassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssss</div>
+      
       <Slide>
         <div id="slide-three" className="background">
           {projectScroll ? (
@@ -92,6 +94,7 @@ function App() {
         </div>
       </Slide>
     </FullPage>
+    </>
   );
 }
 
