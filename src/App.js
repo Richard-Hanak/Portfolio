@@ -44,7 +44,7 @@ function App() {
   return (
     <FullPage
       ref={fullPageRef}
-      scrollMode={projectScroll || window.innerWidth <= 1250 ? "normal" : "full-page"}
+      scrollMode={projectScroll ? "normal" : "full-page"}
     >
       <Slide>
         <div className="background">
