@@ -11,7 +11,7 @@ function useFormValidation(initialState, validate) {
       const noErrors = Object.keys(errors).length === 0;
       if (noErrors) {
         console.log("authenticated!", values.email, values.message);
-        fetch("http://localhost:8080/send", {
+        fetch("/send", {
           method: "POST",
           body: JSON.stringify(values),
           headers: {
