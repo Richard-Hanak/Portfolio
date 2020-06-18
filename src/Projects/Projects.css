@@ -320,6 +320,9 @@
 }
 
 @media (max-width: 670px) {
+  .project-gradient {
+    height: calc(var(--vh, 1vh) * 100);
+  }
   .project-gradient .projects {
     -ms-grid-columns: (82%)[6];
         grid-template-columns: repeat(6, 82%);

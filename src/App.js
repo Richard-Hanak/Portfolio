@@ -24,6 +24,10 @@ function App() {
   const [showRecipeResults, setShowRecipeResults] = useState(false);
   const fullPageRef = useRef();
 
+  
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
   useEffect(() => {
     const targetElement = document.querySelector("#list");
     (() => {
@@ -43,14 +47,12 @@ function App() {
   }, [scrollToPage]);
 
   useEffect(() => {
-    const targetElement = document.querySelector("#list");
+    const enableElement = document.getElementsByClassName("projects");
     (() => {
       if (disableScroll === true) {
-        disableBodyScroll(targetElement);
-        console.log("disabled")
+        disableBodyScroll(enableElement);
       } else {
-        enableBodyScroll(targetElement);
-        console.log("enabled")
+        enableBodyScroll(enableElement);
       }
     })();
   }, [disableScroll]);
@@ -58,7 +60,7 @@ function App() {
   return (
     <FullPage
       ref={fullPageRef}
-      scrollMode={projectScroll ? "normal" : "full-page"}
+      scrollMode={projectScroll || disableScroll ? "normal" : "full-page"}
     >
       <Slide>
         <div className="background">

@@ -256,6 +256,12 @@
   }
 }
 
+@media (max-width: 670px) {
+  .banner-gradient {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+}
+
 @media (max-width: 600px) {
   .banner-gradient .technologies-wrap h3 {
     width: auto;

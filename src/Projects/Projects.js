@@ -6,7 +6,7 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
   return (
     <div className="project-gradient">
       <h1 className="headline"> {language === "EN" ? "Projects" : "Projekty"} </h1>
-      <div className="projects" onClick={() =>  { return setDisableScroll(true), console.log("ASD")}} onVolumeChange={() => {return setDisableScroll(false),console.log("fSD")}}>
+      <div className="projects" onTouchStart={() =>  setDisableScroll(true)} onTouchEnd={() => setDisableScroll(false)}>
         <div className="projectCard">
           <div className="image" id="game"></div>
           <p className="desc">{language === "EN" ? "Game that tests the player's coordination. The highscore table is being kept by a node server." : "Hra, ktorá otestuje vašu koordináciu. highscore databáza je udržiavaná na node serveri."}

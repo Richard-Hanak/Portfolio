@@ -379,6 +379,7 @@
 }
 @media (max-width: 670px) {
   .project-gradient {
+    height: calc(var(--vh, 1vh) * 100);
     .projects {
       grid-template-columns: repeat(6, 82%);
       .projectCard {
