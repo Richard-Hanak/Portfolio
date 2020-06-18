@@ -58,6 +58,23 @@
   font-size: 22px;
 }
 
+.project-gradient .projects .arrow-left {
+  position: absolute;
+  height: 20px;
+  width: 40px;
+  background-color: green;
+  z-index: 5000;
+}
+
+.project-gradient .projects .arrow-right {
+  left: 500px;
+  position: absolute;
+  height: 20px;
+  width: 40px;
+  background-color: orange;
+  z-index: 5000;
+}
+
 .project-gradient .projects .projectCard {
   position: relative;
   display: block;
@@ -281,7 +298,7 @@
 
 @media (max-width: 1250px) {
   .project-gradient .projects {
-    position: absolute;
+    position: relative;
     right: 0;
     width: 96%;
     grid-gap: 15px;
@@ -1338,15 +1355,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.test {
-  position: absolute;
-  height: 200px;
-  width: 200%;
-  background-color: red;
-  z-index: 2000;
-  overflow-x: scroll;
 }
 
 .background {

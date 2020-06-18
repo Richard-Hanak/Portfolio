@@ -1,14 +1,16 @@
 import React from "react";
 
-function Projects({ setRenderElement, setProjectScroll, setScrollToPage, language }) {
+function Projects({ setRenderElement, setProjectScroll, setScrollToPage, language, setDisableScroll }) {
+
+
   return (
     <div className="project-gradient">
       <h1 className="headline"> {language === "EN" ? "Projects" : "Projekty"} </h1>
-      <div className="projects">
+      <div className="projects" onClick={() =>  { return setDisableScroll(true), console.log("ASD")}} onVolumeChange={() => {return setDisableScroll(false),console.log("fSD")}}>
         <div className="projectCard">
           <div className="image" id="game"></div>
           <p className="desc">{language === "EN" ? "Game that tests the player's coordination. The highscore table is being kept by a node server." : "Hra, ktorá otestuje vašu koordináciu. highscore databáza je udržiavaná na node serveri."}
-          <br></br>
+            <br></br>
             <span className="highlight">ReactJS {"&"} NodeJS.</span>
           </p>
           <div className="btnwrap">
@@ -34,8 +36,8 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
         <div className="projectCard">
           <div className="image" id="recipes"></div>
           <p className="desc">
-          {language === "EN" ? "A single page cookbook that uses third-party API api to dynamically display results." : "Single page receptár, ktorý používa api a dynamicky zobrazuje výsledky."} 
-          <br></br>
+            {language === "EN" ? "A single page cookbook that uses third-party API api to dynamically display results." : "Single page receptár, ktorý používa api a dynamicky zobrazuje výsledky."}
+            <br></br>
             <span className="highlight">
               ReactJS: hooks, router {"&"} contextApi.
             </span>
@@ -61,7 +63,7 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
           </div>
         </div>
         <div className="projectCard">
-          <div className="image" id="soon"></div>
+          <div className="image" id="soon1"></div>
           <p className="desc">
             COMING SOON...
             <br></br>
@@ -71,8 +73,8 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
         <div className="projectCard">
           <div className="image" id="portfolio"></div>
           <p className="desc">
-          {language === "EN" ? "Page transitions using react libraries. Custom hook form validation." : "Prechody stránok používajú react knižnice. Validácia formulára pomocou custom hookov."}
-          <br></br>
+            {language === "EN" ? "Page transitions using react libraries. Custom hook form validation." : "Prechody stránok používajú react knižnice. Validácia formulára pomocou custom hookov."}
+            <br></br>
             <span className="highlight">
               {" "}
               ReactJS {"&"} NodeJS.
@@ -92,9 +94,9 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
         <div className="projectCard">
           <div className="image" id="label"></div>
           <p className="desc">
-          {language === "EN" ? "Application specifically tailored for a customer. Creates pirnt-ready shipping labels from Excel tables." : "Aplikácia, ktorú som vytvoril pre klienta. Z Excelu vyrába prepravné štítky pripravené na tlač."}
+            {language === "EN" ? "Application specifically tailored for a customer. Creates pirnt-ready shipping labels from Excel tables." : "Aplikácia, ktorú som vytvoril pre klienta. Z Excelu vyrába prepravné štítky pripravené na tlač."}
 
-          <br></br>
+            <br></br>
             <span className="highlight"> VanillaJS, Jquery {"&"} NodeJS.</span>
           </p>
           <div className="btnwrap">
@@ -118,7 +120,7 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
           </div>
         </div>
         <div className="projectCard">
-          <div className="image" id="soon"></div>
+          <div className="image" id="soon2"></div>
           <p className="desc">
             COMING SOON...
             <br></br>

@@ -112,6 +112,21 @@
     grid-gap: 22px;
     padding-top: 90px;
     font-size: 22px;
+    .arrow-left{
+      position: absolute;
+      height: 20px;
+      width: 40px;
+      background-color: green;
+      z-index: 5000;
+    }
+    .arrow-right{
+      left: 500px;
+      position: absolute;
+      height: 20px;
+      width: 40px;
+      background-color: orange;
+      z-index: 5000;
+    }
 
     .projectCard {
       position: relative;
@@ -311,7 +326,7 @@
 @media (max-width: 1250px) {
   .project-gradient {
     .projects {
-      position: absolute;
+      position: relative;
       right: 0;
       width: 96%;
       grid-gap: 15px;

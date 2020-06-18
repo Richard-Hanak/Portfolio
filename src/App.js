@@ -18,6 +18,7 @@ import "./App.css";
 function App() {
   const [language, setLanguage] = useState("EN");
   const [projectScroll, setProjectScroll] = useState(false);
+  const [disableScroll, setDisableScroll] = useState(false);
   const [scrollToPage, setScrollToPage] = useState();
   const [renderElement, setRenderElement] = useState("slide-three");
   const [showRecipeResults, setShowRecipeResults] = useState(false);
@@ -40,10 +41,21 @@ function App() {
     fullPageRef.current.scrollToSlide(scrollToPage);
     setScrollToPage();
   }, [scrollToPage]);
+
+  useEffect(() => {
+    const targetElement = document.querySelector("#list");
+    (() => {
+      if (disableScroll === true) {
+        disableBodyScroll(targetElement);
+        console.log("disabled")
+      } else {
+        enableBodyScroll(targetElement);
+        console.log("enabled")
+      }
+    })();
+  }, [disableScroll]);
     
   return (
-    <>
-    <div className="test">dassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssssdassssssssssssssssss</div>
     <FullPage
       ref={fullPageRef}
       scrollMode={projectScroll ? "normal" : "full-page"}
@@ -64,6 +76,7 @@ function App() {
             setScrollToPage={setScrollToPage}
             setRenderElement={setRenderElement}
             setProjectScroll={setProjectScroll}
+            setDisableScroll={setDisableScroll}
           />
         </div>
       </Slide>
@@ -94,7 +107,6 @@ function App() {
         </div>
       </Slide>
     </FullPage>
-    </>
   );
 }
 
