@@ -1,6 +1,6 @@
 import React from "react";
 
-function Projects({ setRenderElement, setProjectScroll, setScrollToPage, language, setDisableScroll }) {
+function Projects({ setRenderElement, setProjectScroll, setScrollToPage, language, setCloseButtonSide,  setDisableScroll }) {
 
 
   return (
@@ -34,6 +34,64 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
           </div>
         </div>
         <div className="projectCard">
+        <div className="image" id="tmdb"></div>
+          <p className="desc">
+            {language === "EN" ? "This app displays movie database with infinite loading. Video stream using Shaka player library." : "Táto appka zobrazuje databázu filmov s nekonečným načítavaním. Video stream používa Shaka player knižnicu."}
+            <br></br>
+            <span className="highlight">
+              ReactJS: hooks {"&"} customHooks.
+            </span>
+          </p>
+          <div className="btnwrap">
+            <a
+              className="project-button"
+              href="https://github.com/Richard-Hanak/recipesApi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <p
+              className="project-button"
+              onClick={() => {
+                setCloseButtonSide("left")
+                setRenderElement("TmdbApi");
+                setProjectScroll(true);
+              }}
+            >
+              Demo
+            </p>
+          </div>
+        </div>
+        <div className="projectCard">
+          <div className="image" id="label"></div>
+          <p className="desc">
+            {language === "EN" ? "Application specifically tailored for a customer. Creates pirnt-ready shipping labels from Excel tables." : "Aplikácia, ktorú som vytvoril pre klienta. Z Excelu vyrába prepravné štítky pripravené na tlač."}
+
+            <br></br>
+            <span className="highlight"> VanillaJS, Jquery {"&"} NodeJS.</span>
+          </p>
+          <div className="btnwrap">
+            <a
+              className="project-button"
+              href="https://github.com/Richard-Hanak/Label-creator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>{" "}
+            <p
+              className="project-button"
+              onClick={() => {
+                setRenderElement("LabelCreator");
+                setProjectScroll(true);
+              }}
+            >
+              Video
+            </p>
+          </div>
+        </div>
+        <div className="projectCard">
           <div className="image" id="recipes"></div>
           <p className="desc">
             {language === "EN" ? "A single page cookbook that uses third-party API api to dynamically display results." : "Single page receptár, ktorý používa api a dynamicky zobrazuje výsledky."}
@@ -63,14 +121,6 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
           </div>
         </div>
         <div className="projectCard">
-          <div className="image" id="soon1"></div>
-          <p className="desc">
-            COMING SOON...
-            <br></br>
-            <span className="highlight"></span>
-          </p>
-        </div>
-        <div className="projectCard">
           <div className="image" id="portfolio"></div>
           <p className="desc">
             {language === "EN" ? "Page transitions using react libraries. Custom hook form validation." : "Prechody stránok používajú react knižnice. Validácia formulára pomocou custom hookov."}
@@ -89,34 +139,6 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
             >
               GitHub
             </a>
-          </div>
-        </div>
-        <div className="projectCard">
-          <div className="image" id="label"></div>
-          <p className="desc">
-            {language === "EN" ? "Application specifically tailored for a customer. Creates pirnt-ready shipping labels from Excel tables." : "Aplikácia, ktorú som vytvoril pre klienta. Z Excelu vyrába prepravné štítky pripravené na tlač."}
-
-            <br></br>
-            <span className="highlight"> VanillaJS, Jquery {"&"} NodeJS.</span>
-          </p>
-          <div className="btnwrap">
-            <a
-              className="project-button"
-              href="https://github.com/Richard-Hanak/Label-creator"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>{" "}
-            <p
-              className="project-button"
-              onClick={() => {
-                setRenderElement("LabelCreator");
-                setProjectScroll(true);
-              }}
-            >
-              Video
-            </p>
           </div>
         </div>
         <div className="projectCard">

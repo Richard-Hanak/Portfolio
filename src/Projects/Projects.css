@@ -115,6 +115,10 @@
   background-image: url(./images/portfolio.png);
 }
 
+.project-gradient .projects .projectCard .image#tmdb {
+  background-image: url(./images/tmdb.png);
+}
+
 .project-gradient .projects .projectCard .desc {
   opacity: 0;
   position: absolute;

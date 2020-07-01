@@ -1,0 +1,24 @@
+.btn-next {
+  position: absolute;
+  right: 0;
+  height: 100px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  border: none;
+  background: none;
+}
+
+.btn-next img {
+  height: 46px;
+  margin-right: 12px;
+}
+
+@media (max-width: 817px) {
+  .btn-next {
+    position: relative;
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+}
+/*# sourceMappingURL=ButtonNext.css.map */

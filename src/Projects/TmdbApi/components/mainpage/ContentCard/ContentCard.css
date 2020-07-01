@@ -1,0 +1,72 @@
+.content-card {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 40px;
+  padding-right: 100px;
+  padding-top: 80px;
+  -ms-grid-columns: (minmax(220px, 220px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
+}
+
+.content-card h1 {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  color: white;
+}
+
+.content-card li {
+  list-style: none;
+  margin: 0px 50px;
+  height: 356px;
+}
+
+.content-card p {
+  position: relative;
+  color: white;
+  width: 200px;
+  font-size: 18px;
+}
+
+.content-card img {
+  cursor: pointer;
+}
+
+.loading {
+  line-height: 356px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  background: #171e2e;
+  width: 100%;
+}
+
+@media (max-width: 817px) {
+  .content-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow-y: scroll;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    padding-left: 0;
+  }
+  .content-card li {
+    margin: 10px 10px;
+  }
+  .content-card li:first-of-type {
+    padding-left: 10px;
+  }
+  .content-card h1 {
+    left: 20px;
+  }
+}
+/*# sourceMappingURL=ContentCard.css.map */

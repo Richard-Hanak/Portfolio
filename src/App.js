@@ -12,6 +12,7 @@ import Context from "./Projects/RecipesApi/Context.js";
 import SearchResults from "./Projects/RecipesApi/SearchResults/SearchResults.js";
 import Tgame from "./Projects/TargetGame/App.js";
 import LabelCreator from "./Projects/LabelCreator/LabelCreator.js";
+import TmdbApi from "./Projects/TmdbApi/components/App.js";
 import "./Projects/RecipesApi/App/Home.css";
 import "./App.css";
 
@@ -20,13 +21,13 @@ function App() {
   const [projectScroll, setProjectScroll] = useState(false);
   const [disableScroll, setDisableScroll] = useState(false);
   const [scrollToPage, setScrollToPage] = useState();
+  const [closeButtonSide, setCloseButtonSide] = useState("right");
   const [renderElement, setRenderElement] = useState("slide-three");
   const [showRecipeResults, setShowRecipeResults] = useState(false);
   const fullPageRef = useRef();
 
-  
   let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
 
   useEffect(() => {
     const targetElement = document.querySelector("#list");
@@ -56,7 +57,7 @@ function App() {
       }
     })();
   }, [disableScroll]);
-    
+
   return (
     <FullPage
       ref={fullPageRef}
@@ -79,14 +80,17 @@ function App() {
             setRenderElement={setRenderElement}
             setProjectScroll={setProjectScroll}
             setDisableScroll={setDisableScroll}
+            setCloseButtonSide={setCloseButtonSide}
           />
         </div>
       </Slide>
-      
+
       <Slide>
         <div id="slide-three" className="background">
           {projectScroll ? (
             <CloseButton
+              setCloseButtonSide={setCloseButtonSide}
+              closeButtonSide={closeButtonSide}
               setRenderElement={setRenderElement}
               setProjectScroll={setProjectScroll}
             />
@@ -103,6 +107,8 @@ function App() {
             </Context>
           ) : renderElement === "LabelCreator" ? (
             <LabelCreator />
+          ) : renderElement === "TmdbApi" ? (
+            <TmdbApi />
           ) : (
             <Contact setScrollToPage={setScrollToPage} language={language} />
           )}

@@ -25,4 +25,8 @@
 .closeBtnWrap .closeButton {
   fill: white;
 }
+
+#left {
+  left: 22px;
+}
 /*# sourceMappingURL=CloseButton.css.map */
