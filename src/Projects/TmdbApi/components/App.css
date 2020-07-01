@@ -326,14 +326,9 @@
   }
 }
 
-:root {
-  --height: calc(var(--vh, 1vh) * 100);
-}
-
 .video-container {
   height: 100vh;
-  height: var(--height);
-  width: calc(var(--height / 9) * 16);
+  height: calc(var(--vh, 1vh) * 100);
   background: black;
   font-size: 40px;
 }
