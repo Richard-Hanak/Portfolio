@@ -66,7 +66,7 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
           <div className="btnwrap">
             <a
               className="project-button"
-              href="https://github.com/Richard-Hanak/recipesApi"
+              href="https://github.com/Richard-Hanak/tmdb-api"
               target="_blank"
               rel="noopener noreferrer"
             >
