@@ -17,7 +17,7 @@ const Banner = ({ setScrollToPage, setLanguage, language }) => {
       <div className="technologies-wrap">
       <h3>{language === "EN" ? "Technologies that I use" : "Technológie, ktoré používam"}</h3>
       <p className="technologies">
-        Html5, Css3, Scss, JavaScript, ReactJS, NodeJS, Express, GitHub, Adobe XD.
+        Html5, Scss, JavaScript, ReactJS, Material UI, NodeJS, Express, PostgreSQL, KnexJS, Mocha+Chai, GitHub, Adobe XD.
       </p></div>
       <p
         id="btn"

@@ -7,6 +7,27 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
     <div className="project-gradient">
       <h1 className="headline"> {language === "EN" ? "Projects" : "Projekty"} </h1>
       <div className="projects" onTouchStart={() =>  setDisableScroll(true)} onTouchEnd={() => setDisableScroll(false)}>
+      <div className="projectCard">
+          <div className="image" id="littlePumpkin"></div>
+          <p className="desc">
+            {language === "EN" ? "E-commerce that im currently working on. Soon with Facebook Pixel & Payment gateway." : "E-commerce na ktorom práve pracujem. Čoskoro s platobnou bránou a facebook pixelom."}
+            <br></br>
+            <span className="highlight">
+              {" "}
+              ReactJS {"&"} MaterialUI.
+            </span>
+          </p>
+          <div className="btnwrap">
+            <a
+              className="project-button"
+              href="https://littlepumpkin.sk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </a>
+          </div>
+        </div>
         <div className="projectCard">
           <div className="image" id="game"></div>
           <p className="desc">{language === "EN" ? "Game that tests the player's coordination. The highscore table is being kept by a node server." : "Hra, ktorá otestuje vašu koordináciu. highscore databáza je udržiavaná na node serveri."}
@@ -120,6 +141,7 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
             </p>
           </div>
         </div>
+
         <div className="projectCard">
           <div className="image" id="portfolio"></div>
           <p className="desc">
@@ -141,14 +163,8 @@ function Projects({ setRenderElement, setProjectScroll, setScrollToPage, languag
             </a>
           </div>
         </div>
-        <div className="projectCard">
-          <div className="image" id="soon2"></div>
-          <p className="desc">
-            COMING SOON...
-            <br></br>
-            <span className="highlight"></span>
-          </p>
-        </div>
+
+
       </div>
       <p
         id="btn"

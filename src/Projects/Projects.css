@@ -119,6 +119,10 @@
   background-image: url(./images/tmdb.png);
 }
 
+.project-gradient .projects .projectCard .image#littlePumpkin {
+  background-image: url(./images/LittlePumpkin.png);
+}
+
 .project-gradient .projects .projectCard .desc {
   opacity: 0;
   position: absolute;

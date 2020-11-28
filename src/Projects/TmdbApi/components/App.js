@@ -10,7 +10,7 @@ function TmdbApi() {
   const [movieDetails, setMovieDetails] = useState();
   const [search, setSearch] = useState();
   // The api key would normally be requested from backend server for security.
-  const api_key = "95c816e6bdf08cc11c213d169108e6d4";
+  const api_key = "0d35aeddcf1fdcc5a71aca40ab877f98";
 
   if (play) {
     return <ShakaPlayer setPlay={setPlay} movieDetails={movieDetails}/>;
