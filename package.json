@@ -10,13 +10,13 @@
     "core-js": "^2.6.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.22.1",
     "nodemailer": "^6.4.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-full-page": "^0.1.9",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "shaka-player": "^3.0.1"
   },
   "scripts": {
